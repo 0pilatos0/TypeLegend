@@ -7,5 +7,27 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "description": "Empowering TypeScript Developers with Essential Utilities",
+  "version": "0.0.1",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0pilatos0/TypeJedi.git"
+  },
+  "keywords": [
+    "utils"
+  ],
+  "author": "0pilatos0",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/0pilatos0/TypeJedi/issues"
+  },
+  "homepage": "https://github.com/0pilatos0/TypeJedi#readme"
 }
