@@ -1,15 +1,36 @@
-# typejedi
+# TypeJedi - Your Typesafe Utility Library
 
-To install dependencies:
+![TypeJedi Logo](soontm.png)
+
+TypeJedi is a versatile and typesafe utility library designed to simplify common tasks in your TypeScript projects. With TypeJedi, you can harness the power of TypeScript's strong typing system to write safer and more maintainable code.
+
+## Features
+
+- **Type Safety:** Ensure type correctness throughout your codebase, reducing runtime errors.
+- **Utility Functions:** A collection of utility functions for common tasks.
+- **Custom Types:** Pre-defined custom types for various scenarios.
+- **Modular:** Use only the parts of TypeJedi that you need, keeping your bundle size minimal.
+
+## Installation
+
+You can install TypeJedi via npm or yarn:
 
 ```bash
-bun install
+npm install typejedi
+# or
+yarn add typejedi
+# or
+bun add typejedi
 ```
 
-To run:
+## Documentation
 
-```bash
-bun run index.ts
-```
+You can find the documentation for TypeJedi "SOONTM"
 
-This project was created using `bun init` in bun v1.0.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## License
+
+TypeJedi is licensed under the MIT license. See the [LICENSE](LICENSE) file for more information.
+
+## Support
+
+If you encounter any issues or have questions, pleas open an issue on the [GitHub repository](https://github.com/0pilatos0/TypeJedi/issues) or contact me on [Twitter](https://twitter.com/pilatobyte).
