@@ -1,4 +1,4 @@
-import camelCase from "../src/camelCase";
+import { camelCase } from "../src/string/camelCase";
 import { expect, describe, it } from "bun:test";
 
 describe("camelCase", () => {
