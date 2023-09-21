@@ -1,3 +1,7 @@
+![npm](https://img.shields.io/npm/dm/typejedi)
+![GitHub Repo stars](https://img.shields.io/github/stars/0pilatos0/TypeJedi)
+![GitHub contributors](https://img.shields.io/github/contributors/0pilatos0/TypeJedi)
+
 # TypeJedi - Your Typesafe Utility Library
 
 ![TypeJedi Logo](soontm.png)
