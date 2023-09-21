@@ -1,5 +1,5 @@
-import { camelCase } from "../src/string/camelCase";
 import { expect, describe, it } from "bun:test";
+import { camelCase } from "../../src";
 
 describe("camelCase", () => {
   it("should convert a string with spaces to camelCase", () => {
