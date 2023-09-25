@@ -4,7 +4,7 @@
 
 # TypeJedi - Your Typesafe Utility Library
 
-![TypeJedi Logo](soontm.png)
+![TypeJedi Logo](https://paulvanderlei.com/_next/image?url=%2Ftypejedi.png&w=3840&q=75)
 
 TypeJedi is a versatile and typesafe utility library designed to simplify common tasks in your TypeScript projects. With TypeJedi, you can harness the power of TypeScript's strong typing system to write safer and more maintainable code.
 
