@@ -88,7 +88,11 @@ ${Object.keys(grouped)
     (category) => `
 ## ${category.charAt(0).toUpperCase() + category.slice(1)}Utils
 
-the following utility functions are available in the ${category}Utils class, they can be used as a static method on the ${category}Utils class or as a standalone function.
+the following utility functions are available in the \`${
+      category.charAt(0).toUpperCase() + category.slice(1)
+    }Utils\` class, they can be used as a static method on the \`${
+      category.charAt(0).toUpperCase() + category.slice(1)
+    }Utils\` class or as a standalone function.
 
 ${grouped[category]
   .map(
@@ -96,7 +100,7 @@ ${grouped[category]
 ### ${path.basename(filePath).slice(0, -3)}
 \`\`\`typescript
 /**
-${comments.join("\n")}
+ ${comments.join("\n")}
 */
 \`\`\`
 `

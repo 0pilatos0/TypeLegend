@@ -6,13 +6,13 @@ Here are some of the utility functions and classes available in this library:
 
 ## DateUtils
 
-the following utility functions are available in the dateUtils class, they can be used as a static method on the dateUtils class or as a standalone function.
+the following utility functions are available in the `DateUtils` class, they can be used as a static method on the `DateUtils` class or as a standalone function.
 
 
 ### addDays
 ```typescript
 /**
-* Adds the specified number of days to a given date.
+ * Adds the specified number of days to a given date.
  * @param date - The date to add days to.
  * @param days - The number of days to add.
  * @returns A new Date object representing the result of adding the specified number of days to the given date.
@@ -23,7 +23,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentDayName
 ```typescript
 /**
-* Returns the name of the current day of the week.
+ * Returns the name of the current day of the week.
  * @returns  The name of the current day of the week.
 */
 ```
@@ -32,7 +32,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### subtractDays
 ```typescript
 /**
-* Subtracts the specified number of days from a given date.
+ * Subtracts the specified number of days from a given date.
  *
  * @param date - The date to subtract days from.
  * @param days - The number of days to subtract.
@@ -44,7 +44,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentDate
 ```typescript
 /**
-* Returns the current date and time.
+ * Returns the current date and time.
  * @returns  The current date and time.
 */
 ```
@@ -53,7 +53,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### getWeekNumber
 ```typescript
 /**
-* Calculates the week number of a given date.
+ * Calculates the week number of a given date.
  *
  * @param date - The date for which to calculate the week number.
  * @returns The week number of the given date.
@@ -64,7 +64,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### isLeapYear
 ```typescript
 /**
-* Checks if a given year is a leap year.
+ * Checks if a given year is a leap year.
  * @param date - The date object representing the year.
  * @returns A boolean value indicating whether the year is a leap year.
 */
@@ -74,7 +74,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentYear
 ```typescript
 /**
-* Returns the current year as a number.
+ * Returns the current year as a number.
  * @returns  The current year.
 */
 ```
@@ -83,7 +83,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentMonthName
 ```typescript
 /**
-* Returns the name of the current month.
+ * Returns the name of the current month.
  * @returns  The name of the current month.
 */
 ```
@@ -92,7 +92,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### differenceInDays
 ```typescript
 /**
-* Calculates the difference in days between two dates.
+ * Calculates the difference in days between two dates.
  * @param dateLeft The first date.
  * @param dateRight The second date.
  * @returns The difference in days between the two dates.
@@ -103,7 +103,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentMonth
 ```typescript
 /**
-* Returns the current month as a number.
+ * Returns the current month as a number.
  * @returns  The current month as a number (1-12).
 */
 ```
@@ -112,7 +112,7 @@ the following utility functions are available in the dateUtils class, they can b
 ### currentDay
 ```typescript
 /**
-* Returns the current day of the month.
+ * Returns the current day of the month.
  * @returns  The current day of the month.
 */
 ```
@@ -121,13 +121,13 @@ the following utility functions are available in the dateUtils class, they can b
 
 ## MathUtils
 
-the following utility functions are available in the mathUtils class, they can be used as a static method on the mathUtils class or as a standalone function.
+the following utility functions are available in the `MathUtils` class, they can be used as a static method on the `MathUtils` class or as a standalone function.
 
 
 ### modulus
 ```typescript
 /**
-* Calculates the modulus of two numbers.
+ * Calculates the modulus of two numbers.
  *
  * @param a - The dividend.
  * @param b - The divisor.
@@ -139,7 +139,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### ceil
 ```typescript
 /**
-* Returns the smallest integer greater than or equal to a given number, rounded to a specified precision.
+ * Returns the smallest integer greater than or equal to a given number, rounded to a specified precision.
  * @param number - The number to round up.
  * @param precision - The number of decimal places to round up to. Defaults to 0.
  * @returns The rounded up number.
@@ -150,7 +150,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### divide
 ```typescript
 /**
-* Divides two numbers.
+ * Divides two numbers.
  * @param a The dividend.
  * @param b The divisor.
  * @returns The quotient of the two numbers.
@@ -161,7 +161,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### floor
 ```typescript
 /**
-* Returns the largest integer less than or equal to a given number, with optional precision.
+ * Returns the largest integer less than or equal to a given number, with optional precision.
  *
  * @param number - The number to round down.
  * @param precision - The number of decimal places to preserve. Defaults to 0.
@@ -179,7 +179,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### multiply
 ```typescript
 /**
-* Multiplies two numbers.
+ * Multiplies two numbers.
  * @param a The first number to multiply.
  * @param b The second number to multiply.
  * @returns The product of the two numbers.
@@ -190,7 +190,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### isPrime
 ```typescript
 /**
-* Checks if a number is prime.
+ * Checks if a number is prime.
  * @param a - The number to check.
  * @returns True if the number is prime, false otherwise.
 */
@@ -200,7 +200,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### sqrt
 ```typescript
 /**
-* Calculates the square root of a number.
+ * Calculates the square root of a number.
  * @param a - The number to calculate the square root of.
  * @returns The square root of the input number.
 */
@@ -210,7 +210,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### subtract
 ```typescript
 /**
-* Subtracts two numbers.
+ * Subtracts two numbers.
  *
  * @param a The first number.
  * @param b The second number.
@@ -222,7 +222,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### add
 ```typescript
 /**
-* Adds two numbers together.
+ * Adds two numbers together.
  * @param a - The first number to add.
  * @param b - The second number to add.
  * @returns The sum of the two numbers.
@@ -233,7 +233,7 @@ the following utility functions are available in the mathUtils class, they can b
 ### pow
 ```typescript
 /**
-* Calculates the power of a number.
+ * Calculates the power of a number.
  * @param a - The base number.
  * @param b - The exponent.
  * @returns The result of raising `a` to the power of `b`.
@@ -244,13 +244,13 @@ the following utility functions are available in the mathUtils class, they can b
 
 ## StringUtils
 
-the following utility functions are available in the stringUtils class, they can be used as a static method on the stringUtils class or as a standalone function.
+the following utility functions are available in the `StringUtils` class, they can be used as a static method on the `StringUtils` class or as a standalone function.
 
 
 ### capitalize
 ```typescript
 /**
-* Capitalizes the first letter of a string and makes the rest of the string lowercase.
+ * Capitalizes the first letter of a string and makes the rest of the string lowercase.
  * @param str - The string to be capitalized.
  * @returns The capitalized string.
 */
@@ -260,7 +260,7 @@ the following utility functions are available in the stringUtils class, they can
 ### camelCase
 ```typescript
 /**
-* Converts a string to camelCase.
+ * Converts a string to camelCase.
  *
  * @param  str - The input string to convert.
  * @returns  The camelCase version of the input string.
@@ -271,7 +271,7 @@ the following utility functions are available in the stringUtils class, they can
 ### isPalindrome
 ```typescript
 /**
-* Checks if a string is a palindrome.
+ * Checks if a string is a palindrome.
  * @param str - The string to check.
  * @returns True if the string is a palindrome, false otherwise.
 */
@@ -281,7 +281,7 @@ the following utility functions are available in the stringUtils class, they can
 ### reverse
 ```typescript
 /**
-* Reverses a given string.
+ * Reverses a given string.
  *
  * @param str - The string to be reversed.
  * @returns The reversed string.

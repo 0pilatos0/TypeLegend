@@ -37,4 +37,4 @@ TypeJedi is licensed under the MIT license. See the [LICENSE](LICENSE) file for 
 
 ## Support
 
-If you encounter any issues or have questions, pleas open an issue on the [GitHub repository](https://github.com/0pilatos0/TypeJedi/issues) or contact me on [Twitter](https://twitter.com/pilatobyte).
+If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/0pilatos0/TypeJedi/issues) or contact me on [Twitter](https://twitter.com/pilatobyte).
