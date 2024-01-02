@@ -18,11 +18,19 @@ const colors = {
 // Function to parse JSDoc comments and extract information
 function parseJSDocComments(filePath: string) {
   const fileContent = fs.readFileSync(filePath, "utf8");
+
+  //remove the function body from the file content so that the regex doesn't match the comments inside the function body
+  const functionBodyRegex = /{[\s\S]*?}/g;
+  const fileContentWithoutFunctionBody = fileContent.replace(
+    functionBodyRegex,
+    ""
+  );
+
   const jsDocRegex = /\/\*\*\s*\n([\s\S]*?)\s*\*\//g;
   const matches = [];
   let match;
 
-  while ((match = jsDocRegex.exec(fileContent)) !== null) {
+  while ((match = jsDocRegex.exec(fileContentWithoutFunctionBody)) !== null) {
     const comment = match[1].trim();
     matches.push(comment);
   }

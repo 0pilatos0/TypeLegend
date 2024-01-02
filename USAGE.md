@@ -21,7 +21,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the name of the current day of the week.
- * @returns {string} The name of the current day of the week.
+ * @returns  The name of the current day of the week.
 */
 ```
 
@@ -42,7 +42,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the current date and time.
- * @returns {Date} The current date and time.
+ * @returns  The current date and time.
 */
 ```
 
@@ -72,7 +72,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the current year as a number.
- * @returns {number} The current year.
+ * @returns  The current year.
 */
 ```
 
@@ -81,7 +81,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the name of the current month.
- * @returns {string} The name of the current month.
+ * @returns  The name of the current month.
 */
 ```
 
@@ -101,7 +101,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the current month as a number.
- * @returns {number} The current month as a number (1-12).
+ * @returns  The current month as a number (1-12).
 */
 ```
 
@@ -110,7 +110,7 @@ Here are some of the utility functions and classes available in this library:
 ```typescript
 /**
 * Returns the current day of the month.
- * @returns {number} The current day of the month.
+ * @returns  The current day of the month.
 */
 ```
 
@@ -253,13 +253,8 @@ Here are some of the utility functions and classes available in this library:
 /**
 * Converts a string to camelCase.
  *
- * @param {string} str - The input string to convert.
- * @returns {string} The camelCase version of the input string.
-* Replaces non-letter characters with camelCase formatting.
-   *
-   * @param {string} word - The matched word or character.
-   * @param {number} index - The index of the matched word or character.
-   * @returns {string} The replacement for the matched word or character.
+ * @param  str - The input string to convert.
+ * @returns  The camelCase version of the input string.
 */
 ```
 
