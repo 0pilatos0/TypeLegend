@@ -11,7 +11,7 @@
  * floor(4.12345, 3); // 4.123
  * ```
  */
-function floor(number: number, precision: number = 0): number {
+export function floor(number: number, precision: number = 0): number {
   const pair = `${number}`.split(".");
   const integer = pair[0];
   const decimal = pair[1] || "";
@@ -20,5 +20,3 @@ function floor(number: number, precision: number = 0): number {
   const result = `${integer}.${decimal.slice(0, index)}`;
   return Number(result);
 }
-
-export { floor };

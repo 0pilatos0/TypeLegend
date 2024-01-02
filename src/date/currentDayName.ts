@@ -2,7 +2,7 @@
  * Returns the name of the current day of the week.
  * @returns {string} The name of the current day of the week.
  */
-function currentDayName(): string {
+export function currentDayName(): string {
   const today = new Date();
   const day = today.getDay();
   const days = [
@@ -16,5 +16,3 @@ function currentDayName(): string {
   ];
   return days[day];
 }
-
-export { currentDayName };

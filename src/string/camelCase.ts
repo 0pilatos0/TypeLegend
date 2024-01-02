@@ -4,7 +4,7 @@
  * @param {string} str - The input string to convert.
  * @returns {string} The camelCase version of the input string.
  */
-function camelCase(str: string): string {
+export function camelCase(str: string): string {
   /**
    * Replaces non-letter characters with camelCase formatting.
    *
@@ -32,5 +32,3 @@ function camelCase(str: string): string {
 
   return str.replace(/[\s_-]+(\w)/g, camelCaseReplace).replace(/\s+/g, "");
 }
-
-export { camelCase };
