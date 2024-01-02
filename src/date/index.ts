@@ -1,37 +1,39 @@
+
+import { addDays } from "./addDays";
+import { currentDayName } from "./currentDayName";
+import { subtractDays } from "./subtractDays";
 import { currentDate } from "./currentDate";
-import { currentDay } from "./currentDay";
-import { currentMonth } from "./currentMonth";
+import { getWeekNumber } from "./getWeekNumber";
+import { isLeapYear } from "./isLeapYear";
 import { currentYear } from "./currentYear";
 import { currentMonthName } from "./currentMonthName";
-import { currentDayName } from "./currentDayName";
-import { addDays } from "./addDays";
-import { subtractDays } from "./subtractDays";
 import { differenceInDays } from "./differenceInDays";
-import { isLeapYear } from "./isLeapYear";
-import { getWeekNumber } from "./getWeekNumber";
+import { currentMonth } from "./currentMonth";
+import { currentDay } from "./currentDay";
 
 export class DateUtils {
-  static currentDate = currentDate;
-  static currentDay = currentDay;
-  static currentMonth = currentMonth;
-  static currentYear = currentYear;
-  static currentMonthName = currentMonthName;
-  static currentDayName = currentDayName;
-  static addDays = addDays;
-  static subtractDays = subtractDays;
-  static differenceInDays = differenceInDays;
-  static isLeapYear = isLeapYear;
-  static getWeekNumber = getWeekNumber;
+  static addDays: typeof addDays = addDays;
+  static currentDayName: typeof currentDayName = currentDayName;
+  static subtractDays: typeof subtractDays = subtractDays;
+  static currentDate: typeof currentDate = currentDate;
+  static getWeekNumber: typeof getWeekNumber = getWeekNumber;
+  static isLeapYear: typeof isLeapYear = isLeapYear;
+  static currentYear: typeof currentYear = currentYear;
+  static currentMonthName: typeof currentMonthName = currentMonthName;
+  static differenceInDays: typeof differenceInDays = differenceInDays;
+  static currentMonth: typeof currentMonth = currentMonth;
+  static currentDay: typeof currentDay = currentDay;
 }
 
+export { addDays } from "./addDays";
+export { currentDayName } from "./currentDayName";
+export { subtractDays } from "./subtractDays";
 export { currentDate } from "./currentDate";
-export { currentDay } from "./currentDay";
-export { currentMonth } from "./currentMonth";
+export { getWeekNumber } from "./getWeekNumber";
+export { isLeapYear } from "./isLeapYear";
 export { currentYear } from "./currentYear";
 export { currentMonthName } from "./currentMonthName";
-export { currentDayName } from "./currentDayName";
-export { addDays } from "./addDays";
-export { subtractDays } from "./subtractDays";
 export { differenceInDays } from "./differenceInDays";
-export { isLeapYear } from "./isLeapYear";
-export { getWeekNumber } from "./getWeekNumber";
+export { currentMonth } from "./currentMonth";
+export { currentDay } from "./currentDay";
+

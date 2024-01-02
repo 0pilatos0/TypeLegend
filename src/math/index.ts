@@ -1,34 +1,36 @@
-import { add } from "./add";
+
+import { modulus } from "./modulus";
 import { ceil } from "./ceil";
 import { divide } from "./divide";
 import { floor } from "./floor";
-import { isPrime } from "./isPrime";
-import { modulus } from "./modulus";
 import { multiply } from "./multiply";
-import { pow } from "./pow";
+import { isPrime } from "./isPrime";
 import { sqrt } from "./sqrt";
 import { subtract } from "./subtract";
+import { add } from "./add";
+import { pow } from "./pow";
 
 export class MathUtils {
-  static add = add;
-  static ceil = ceil;
-  static divide = divide;
-  static floor = floor;
-  static multiply = multiply;
-  static subtract = subtract;
-  static modulus = modulus;
-  static pow = pow;
-  static sqrt = sqrt;
-  static isPrime = isPrime;
+  static modulus: typeof modulus = modulus;
+  static ceil: typeof ceil = ceil;
+  static divide: typeof divide = divide;
+  static floor: typeof floor = floor;
+  static multiply: typeof multiply = multiply;
+  static isPrime: typeof isPrime = isPrime;
+  static sqrt: typeof sqrt = sqrt;
+  static subtract: typeof subtract = subtract;
+  static add: typeof add = add;
+  static pow: typeof pow = pow;
 }
 
-export { add } from "./add";
+export { modulus } from "./modulus";
 export { ceil } from "./ceil";
 export { divide } from "./divide";
 export { floor } from "./floor";
 export { multiply } from "./multiply";
-export { subtract } from "./subtract";
-export { modulus } from "./modulus";
-export { pow } from "./pow";
-export { sqrt } from "./sqrt";
 export { isPrime } from "./isPrime";
+export { sqrt } from "./sqrt";
+export { subtract } from "./subtract";
+export { add } from "./add";
+export { pow } from "./pow";
+
