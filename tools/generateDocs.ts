@@ -79,7 +79,7 @@ function generateReadmeContent() {
   }, {} as { [key: string]: typeof utilityComments });
 
   return `
-#Usage
+# Usage
 
 Here are some of the utility functions and classes available in this library:
 
@@ -87,10 +87,13 @@ ${Object.keys(grouped)
   .map(
     (category) => `
 ## ${category.charAt(0).toUpperCase() + category.slice(1)}Utils
+
+the following utility functions are available in the ${category}Utils class, they can be used as a static method on the ${category}Utils class or as a standalone function.
+
 ${grouped[category]
   .map(
     ({ filePath, comments }) => `
-### ${path.basename(filePath)}
+### ${path.basename(filePath).slice(0, -3)}
 \`\`\`typescript
 /**
 ${comments.join("\n")}

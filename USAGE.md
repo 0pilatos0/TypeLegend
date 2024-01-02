@@ -1,12 +1,15 @@
 
-#Usage
+# Usage
 
 Here are some of the utility functions and classes available in this library:
 
 
 ## DateUtils
 
-### addDays.ts
+the following utility functions are available in the dateUtils class, they can be used as a static method on the dateUtils class or as a standalone function.
+
+
+### addDays
 ```typescript
 /**
 * Adds the specified number of days to a given date.
@@ -17,7 +20,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentDayName.ts
+### currentDayName
 ```typescript
 /**
 * Returns the name of the current day of the week.
@@ -26,7 +29,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### subtractDays.ts
+### subtractDays
 ```typescript
 /**
 * Subtracts the specified number of days from a given date.
@@ -38,7 +41,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentDate.ts
+### currentDate
 ```typescript
 /**
 * Returns the current date and time.
@@ -47,7 +50,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### getWeekNumber.ts
+### getWeekNumber
 ```typescript
 /**
 * Calculates the week number of a given date.
@@ -58,7 +61,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### isLeapYear.ts
+### isLeapYear
 ```typescript
 /**
 * Checks if a given year is a leap year.
@@ -68,7 +71,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentYear.ts
+### currentYear
 ```typescript
 /**
 * Returns the current year as a number.
@@ -77,7 +80,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentMonthName.ts
+### currentMonthName
 ```typescript
 /**
 * Returns the name of the current month.
@@ -86,7 +89,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### differenceInDays.ts
+### differenceInDays
 ```typescript
 /**
 * Calculates the difference in days between two dates.
@@ -97,7 +100,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentMonth.ts
+### currentMonth
 ```typescript
 /**
 * Returns the current month as a number.
@@ -106,7 +109,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### currentDay.ts
+### currentDay
 ```typescript
 /**
 * Returns the current day of the month.
@@ -118,7 +121,10 @@ Here are some of the utility functions and classes available in this library:
 
 ## MathUtils
 
-### modulus.ts
+the following utility functions are available in the mathUtils class, they can be used as a static method on the mathUtils class or as a standalone function.
+
+
+### modulus
 ```typescript
 /**
 * Calculates the modulus of two numbers.
@@ -130,7 +136,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### ceil.ts
+### ceil
 ```typescript
 /**
 * Returns the smallest integer greater than or equal to a given number, rounded to a specified precision.
@@ -141,7 +147,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### divide.ts
+### divide
 ```typescript
 /**
 * Divides two numbers.
@@ -152,7 +158,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### floor.ts
+### floor
 ```typescript
 /**
 * Returns the largest integer less than or equal to a given number, with optional precision.
@@ -170,7 +176,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### multiply.ts
+### multiply
 ```typescript
 /**
 * Multiplies two numbers.
@@ -181,7 +187,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### isPrime.ts
+### isPrime
 ```typescript
 /**
 * Checks if a number is prime.
@@ -191,7 +197,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### sqrt.ts
+### sqrt
 ```typescript
 /**
 * Calculates the square root of a number.
@@ -201,7 +207,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### subtract.ts
+### subtract
 ```typescript
 /**
 * Subtracts two numbers.
@@ -213,7 +219,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### add.ts
+### add
 ```typescript
 /**
 * Adds two numbers together.
@@ -224,7 +230,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### pow.ts
+### pow
 ```typescript
 /**
 * Calculates the power of a number.
@@ -238,7 +244,10 @@ Here are some of the utility functions and classes available in this library:
 
 ## StringUtils
 
-### capitalize.ts
+the following utility functions are available in the stringUtils class, they can be used as a static method on the stringUtils class or as a standalone function.
+
+
+### capitalize
 ```typescript
 /**
 * Capitalizes the first letter of a string and makes the rest of the string lowercase.
@@ -248,7 +257,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### camelCase.ts
+### camelCase
 ```typescript
 /**
 * Converts a string to camelCase.
@@ -259,7 +268,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### isPalindrome.ts
+### isPalindrome
 ```typescript
 /**
 * Checks if a string is a palindrome.
@@ -269,7 +278,7 @@ Here are some of the utility functions and classes available in this library:
 ```
 
 
-### reverse.ts
+### reverse
 ```typescript
 /**
 * Reverses a given string.
