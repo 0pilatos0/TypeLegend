@@ -29,7 +29,7 @@ bun add typejedi
 
 ## Documentation
 
-You can find the documentation for TypeJedi "SOONTM"
+You can find the documentation for TypeJedi [here](/USAGE.md).
 
 ## License
 

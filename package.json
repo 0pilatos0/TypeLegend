@@ -1,15 +1,16 @@
 {
   "name": "typejedi",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "up": "bun run generate && bun run generateDoc && bun run build",
     "build": "tsup src/index.ts --format cjs,esm --dts --clean",
     "lint": "tsc",
     "generate": "bun tools/generateIndex.ts",
-    "generateAndBuild": "bun run generate && bun run build"
+    "generateDoc": "bun tools/generateDocs.ts"
   },
   "description": "Empowering TypeScript Developers with Essential Utilities",
   "directories": {
