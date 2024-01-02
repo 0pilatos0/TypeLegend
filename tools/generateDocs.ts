@@ -78,10 +78,28 @@ function generateReadmeContent() {
     return acc;
   }, {} as { [key: string]: typeof utilityComments });
 
+  const toc = Object.keys(grouped)
+    .map((category) => {
+      const subItems = grouped[category]
+        .map(({ filePath }) => {
+          const fileName = path.basename(filePath).slice(0, -3);
+          return `  - [${fileName}](#${fileName.toLowerCase()})`;
+        })
+        .join("\n");
+      return `
+- [${
+        category.charAt(0).toUpperCase() + category.slice(1)
+      }Utils](#${category}utils)
+${subItems}`;
+    })
+    .join("\n");
   return `
 # Usage
 
 Here are some of the utility functions and classes available in this library:
+
+## Table of Contents
+${toc}
 
 ${Object.keys(grouped)
   .map(

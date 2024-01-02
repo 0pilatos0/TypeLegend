@@ -3,6 +3,39 @@
 
 Here are some of the utility functions and classes available in this library:
 
+## Table of Contents
+
+- [DateUtils](#dateutils)
+  - [addDays](#adddays)
+  - [currentDayName](#currentdayname)
+  - [subtractDays](#subtractdays)
+  - [currentDate](#currentdate)
+  - [getWeekNumber](#getweeknumber)
+  - [isLeapYear](#isleapyear)
+  - [currentYear](#currentyear)
+  - [currentMonthName](#currentmonthname)
+  - [differenceInDays](#differenceindays)
+  - [currentMonth](#currentmonth)
+  - [currentDay](#currentday)
+
+- [MathUtils](#mathutils)
+  - [modulus](#modulus)
+  - [ceil](#ceil)
+  - [divide](#divide)
+  - [floor](#floor)
+  - [multiply](#multiply)
+  - [isPrime](#isprime)
+  - [sqrt](#sqrt)
+  - [subtract](#subtract)
+  - [add](#add)
+  - [pow](#pow)
+
+- [StringUtils](#stringutils)
+  - [capitalize](#capitalize)
+  - [camelCase](#camelcase)
+  - [isPalindrome](#ispalindrome)
+  - [reverse](#reverse)
+
 
 ## DateUtils
 
