@@ -7,6 +7,8 @@ import { currentDayName } from "./currentDayName";
 import { addDays } from "./addDays";
 import { subtractDays } from "./subtractDays";
 import { differenceInDays } from "./differenceInDays";
+import { isLeapYear } from "./isLeapYear";
+import { getWeekNumber } from "./getWeekNumber";
 
 export class DateUtils {
   static currentDate = currentDate;
@@ -18,6 +20,8 @@ export class DateUtils {
   static addDays = addDays;
   static subtractDays = subtractDays;
   static differenceInDays = differenceInDays;
+  static isLeapYear = isLeapYear;
+  static getWeekNumber = getWeekNumber;
 }
 
 export { currentDate } from "./currentDate";
@@ -29,3 +33,5 @@ export { currentDayName } from "./currentDayName";
 export { addDays } from "./addDays";
 export { subtractDays } from "./subtractDays";
 export { differenceInDays } from "./differenceInDays";
+export { isLeapYear } from "./isLeapYear";
+export { getWeekNumber } from "./getWeekNumber";
