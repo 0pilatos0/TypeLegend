@@ -24,6 +24,17 @@ Here are some of the utility functions and classes available in this library:
   - [currentMonth](#currentmonth)
   - [currentDay](#currentday)
 
+- [FunctionUtils](#functionutils)
+  - [throttle](#throttle)
+  - [debounce](#debounce)
+  - [curry](#curry)
+  - [compose](#compose)
+  - [memoize](#memoize)
+
+- [RegexUtils](#regexutils)
+  - [isEmail](#isemail)
+  - [matchAll](#matchall)
+
 - [MathUtils](#mathutils)
   - [modulus](#modulus)
   - [ceil](#ceil)
@@ -35,6 +46,12 @@ Here are some of the utility functions and classes available in this library:
   - [subtract](#subtract)
   - [add](#add)
   - [pow](#pow)
+
+- [NumberUtils](#numberutils)
+  - [toRoman](#toroman)
+  - [fromRoman](#fromroman)
+  - [randomNumber](#randomnumber)
+  - [formatCurrency](#formatcurrency)
 
 - [ObjectUtils](#objectutils)
   - [deepClone](#deepclone)
@@ -220,6 +237,101 @@ the following utility functions are available in the `DateUtils` class, they can
 
 
 
+## FunctionUtils
+
+the following utility functions are available in the `FunctionUtils` class, they can be used as a static method on the `FunctionUtils` class or as a standalone function.
+
+
+### throttle
+```typescript
+/**
+ * Creates a throttled version of the given function.
+ * The throttled function will only be invoked at most once within the specified time limit.
+ *
+ * @template T - The type of the original function.
+ * @param  func - The original function to be throttled.
+ * @param  limit - The time limit in milliseconds.
+ * @returns  - The throttled function.
+*/
+```
+
+
+### debounce
+```typescript
+/**
+ * Creates a debounced version of the provided function.
+ * The debounced function delays invoking the original function until after a specified amount of time has passed since the last time it was invoked.
+ *
+ * @template T - The type of the original function.
+ * @param  func - The original function to be debounced.
+ * @param  waitFor - The amount of time to wait before invoking the original function.
+ * @returns  - The debounced function.
+*/
+```
+
+
+### curry
+```typescript
+/**
+ * Curries a function, allowing partial application of arguments.
+ * @param fn - The function to curry.
+ * @returns A curried function that can be called with partial arguments.
+*/
+```
+
+
+### compose
+```typescript
+/**
+ * Composes multiple functions into a single function.
+ *
+ * @template T - The type of the argument and return value.
+ * @param  fns - The functions to compose.
+ * @returns  - The composed function.
+*/
+```
+
+
+### memoize
+```typescript
+/**
+ * Memoizes a function by caching its results based on the arguments.
+ * @param fn The function to memoize.
+ * @returns The memoized function.
+*/
+```
+
+
+
+## RegexUtils
+
+the following utility functions are available in the `RegexUtils` class, they can be used as a static method on the `RegexUtils` class or as a standalone function.
+
+
+### isEmail
+```typescript
+/**
+ * Checks if a given string is a valid email address.
+ * @param email - The email address to be validated.
+ * @returns A boolean indicating whether the email is valid or not.
+*/
+```
+
+
+### matchAll
+```typescript
+/**
+ * Returns an array of all matches of a regular expression in a string.
+ *
+ * @template T - The type of the matched strings.
+ * @param  str - The input string to search for matches.
+ * @param  regex - The regular expression to match against the input string.
+ * @returns  - An array of matched strings.
+*/
+```
+
+
+
 ## MathUtils
 
 the following utility functions are available in the `MathUtils` class, they can be used as a static method on the `MathUtils` class or as a standalone function.
@@ -338,6 +450,56 @@ the following utility functions are available in the `MathUtils` class, they can
  * @param a - The base number.
  * @param b - The exponent.
  * @returns The result of raising `a` to the power of `b`.
+*/
+```
+
+
+
+## NumberUtils
+
+the following utility functions are available in the `NumberUtils` class, they can be used as a static method on the `NumberUtils` class or as a standalone function.
+
+
+### toRoman
+```typescript
+/**
+ * Converts a number to its Roman numeral representation.
+ * @param num - The number to be converted to Roman numeral.
+ * @returns A string representing the Roman numeral.
+*/
+```
+
+
+### fromRoman
+```typescript
+/**
+ * Converts a Roman numeral string to a number.
+ *
+ * @param str - The Roman numeral string to convert.
+ * @returns The converted number.
+*/
+```
+
+
+### randomNumber
+```typescript
+/**
+ * Generates a random number between the specified minimum and maximum values (inclusive).
+ * @param min The minimum value of the range.
+ * @param max The maximum value of the range.
+ * @returns A random number between the minimum and maximum values.
+*/
+```
+
+
+### formatCurrency
+```typescript
+/**
+ * Formats a number as currency.
+ *
+ * @param num - The number to format.
+ * @param currency - The currency symbol to use (default: "$").
+ * @returns The formatted currency string.
 */
 ```
 
