@@ -1,6 +1,6 @@
 {
-  "name": "typejedi",
-  "version": "0.0.17",
+  "name": "typelegend",
+  "version": "0.1.0",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/0pilatos0/TypeJedi.git"
+    "url": "git+https://github.com/0pilatos0/TypeLegend.git"
   },
   "keywords": [
     "utils"
@@ -26,9 +26,9 @@
   "author": "0pilatos0",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/0pilatos0/TypeJedi/issues"
+    "url": "https://github.com/0pilatos0/TypeLegend/issues"
   },
-  "homepage": "https://github.com/0pilatos0/TypeJedi#readme",
+  "homepage": "https://github.com/0pilatos0/TypeLegend#readme",
   "devDependencies": {
     "bun-types": "latest",
     "typescript": "^5.2.2",
