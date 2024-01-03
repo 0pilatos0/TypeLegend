@@ -5,6 +5,12 @@ Here are some of the utility functions and classes available in this library:
 
 ## Table of Contents
 
+- [ArrayUtils](#arrayutils)
+  - [chunk](#chunk)
+  - [unique](#unique)
+  - [range](#range)
+  - [flatten](#flatten)
+
 - [DateUtils](#dateutils)
   - [addDays](#adddays)
   - [currentDayName](#currentdayname)
@@ -30,11 +36,73 @@ Here are some of the utility functions and classes available in this library:
   - [add](#add)
   - [pow](#pow)
 
+- [ObjectUtils](#objectutils)
+  - [deepClone](#deepclone)
+  - [pick](#pick)
+  - [keys](#keys)
+  - [values](#values)
+  - [merge](#merge)
+
 - [StringUtils](#stringutils)
   - [capitalize](#capitalize)
   - [camelCase](#camelcase)
   - [isPalindrome](#ispalindrome)
   - [reverse](#reverse)
+
+
+## ArrayUtils
+
+the following utility functions are available in the `ArrayUtils` class, they can be used as a static method on the `ArrayUtils` class or as a standalone function.
+
+
+### chunk
+```typescript
+/**
+ * Splits an array into smaller chunks of a specified size.
+ *
+ * @template T The type of elements in the array.
+ * @param arr The array to be chunked.
+ * @param size The size of each chunk. Default is 1.
+ * @returns An array of chunks, where each chunk is an array of elements from the original array.
+*/
+```
+
+
+### unique
+```typescript
+/**
+ * Returns an array with unique elements from the input array.
+ * @param arr The input array.
+ * @returns An array with unique elements.
+ * @template T The type of elements in the array.
+*/
+```
+
+
+### range
+```typescript
+/**
+ * Returns a new array containing a portion of the original array.
+ * @template T The type of elements in the array.
+ * @param  arr The original array.
+ * @param  [start=0] The starting index (inclusive) of the portion to extract. Defaults to 0.
+ * @param  [end=arr.length] The ending index (exclusive) of the portion to extract. Defaults to the length of the array.
+ * @returns  A new array containing the extracted portion of the original array.
+*/
+```
+
+
+### flatten
+```typescript
+/**
+ * Flattens a multi-dimensional array into a 1-dimensional array.
+ *
+ * @param arr The multi-dimensional array to flatten.
+ * @returns A new 1-dimensional array containing all the elements from the original array.
+ * @template T The type of elements in the array.
+*/
+```
+
 
 
 ## DateUtils
@@ -270,6 +338,74 @@ the following utility functions are available in the `MathUtils` class, they can
  * @param a - The base number.
  * @param b - The exponent.
  * @returns The result of raising `a` to the power of `b`.
+*/
+```
+
+
+
+## ObjectUtils
+
+the following utility functions are available in the `ObjectUtils` class, they can be used as a static method on the `ObjectUtils` class or as a standalone function.
+
+
+### deepClone
+```typescript
+/**
+ * Creates a deep clone of an object.
+ *
+ * @param obj - The object to be cloned.
+ * @returns A deep clone of the object.
+*/
+```
+
+
+### pick
+```typescript
+/**
+ * Creates a new object with only the specified keys from the original object.
+ *
+ * @template T - The type of the original object.
+ * @template K - The type of the keys to pick from the original object.
+ * @param obj - The original object.
+ * @param keys - An array of keys to pick from the original object.
+ * @returns A new object with only the specified keys from the original object.
+*/
+```
+
+
+### keys
+```typescript
+/**
+ * Returns an array of keys from the given object.
+ *
+ * @template T - The type of the object.
+ * @param obj - The object to retrieve keys from.
+ * @returns An array of keys from the object.
+*/
+```
+
+
+### values
+```typescript
+/**
+ * Returns an array of the values of an object.
+ *
+ * @template T - The type of the object.
+ * @param obj - The object to extract values from.
+ * @returns An array containing the values of the object.
+*/
+```
+
+
+### merge
+```typescript
+/**
+ * Merges two objects together.
+ * @template T - The type of the first object.
+ * @template U - The type of the second object.
+ * @param  obj1 - The first object to merge.
+ * @param  obj2 - The second object to merge.
+ * @returns  - The merged object.
 */
 ```
 
