@@ -49,9 +49,15 @@ Here are some of the utility functions and classes available in this library:
 
 - [NumberUtils](#numberutils)
   - [toRoman](#toroman)
+  - [toBinary](#tobinary)
   - [fromRoman](#fromroman)
   - [randomNumber](#randomnumber)
+  - [fromHex](#fromhex)
+  - [toHex](#tohex)
+  - [isOdd](#isodd)
+  - [isEven](#iseven)
   - [formatCurrency](#formatcurrency)
+  - [fromBinary](#frombinary)
 
 - [ObjectUtils](#objectutils)
   - [deepClone](#deepclone)
@@ -470,6 +476,16 @@ the following utility functions are available in the `NumberUtils` class, they c
 ```
 
 
+### toBinary
+```typescript
+/**
+ * Converts a number to its binary representation.
+ * @param value - The number to convert.
+ * @returns The binary representation of the number.
+*/
+```
+
+
 ### fromRoman
 ```typescript
 /**
@@ -492,6 +508,47 @@ the following utility functions are available in the `NumberUtils` class, they c
 ```
 
 
+### fromHex
+```typescript
+/**
+ * Converts a hexadecimal string to a number.
+ *
+ * @param hexString - The hexadecimal string to convert.
+ * @returns The converted number.
+*/
+```
+
+
+### toHex
+```typescript
+/**
+ * Converts a number to its hexadecimal representation.
+ * @param value - The number to convert.
+ * @returns The hexadecimal representation of the number.
+*/
+```
+
+
+### isOdd
+```typescript
+/**
+ * Checks if a number is odd.
+ * @param n - The number to check.
+ * @returns True if the number is odd, false otherwise.
+*/
+```
+
+
+### isEven
+```typescript
+/**
+ * Checks if a number is even.
+ * @param n - The number to check.
+ * @returns True if the number is even, false otherwise.
+*/
+```
+
+
 ### formatCurrency
 ```typescript
 /**
@@ -500,6 +557,17 @@ the following utility functions are available in the `NumberUtils` class, they c
  * @param num - The number to format.
  * @param currency - The currency symbol to use (default: "$").
  * @returns The formatted currency string.
+*/
+```
+
+
+### fromBinary
+```typescript
+/**
+ * Converts a binary string to a number.
+ *
+ * @param binaryString The binary string to convert.
+ * @returns The converted number.
 */
 ```
 
