@@ -1,5 +1,7 @@
 
 import { modulus } from "./modulus";
+import { average } from "./average";
+import { median } from "./median";
 import { ceil } from "./ceil";
 import { divide } from "./divide";
 import { floor } from "./floor";
@@ -12,6 +14,8 @@ import { pow } from "./pow";
 
 export class MathUtils {
   static modulus: typeof modulus = modulus;
+  static average: typeof average = average;
+  static median: typeof median = median;
   static ceil: typeof ceil = ceil;
   static divide: typeof divide = divide;
   static floor: typeof floor = floor;
@@ -24,6 +28,8 @@ export class MathUtils {
 }
 
 export { modulus } from "./modulus";
+export { average } from "./average";
+export { median } from "./median";
 export { ceil } from "./ceil";
 export { divide } from "./divide";
 export { floor } from "./floor";

@@ -6,6 +6,7 @@ Here are some of the utility functions and classes available in this library:
 ## Table of Contents
 
 - [ArrayUtils](#arrayutils)
+  - [sample](#sample)
   - [chunk](#chunk)
   - [unique](#unique)
   - [range](#range)
@@ -37,6 +38,8 @@ Here are some of the utility functions and classes available in this library:
 
 - [MathUtils](#mathutils)
   - [modulus](#modulus)
+  - [average](#average)
+  - [median](#median)
   - [ceil](#ceil)
   - [divide](#divide)
   - [floor](#floor)
@@ -68,14 +71,27 @@ Here are some of the utility functions and classes available in this library:
 
 - [StringUtils](#stringutils)
   - [capitalize](#capitalize)
+  - [countOccurrences](#countoccurrences)
   - [camelCase](#camelcase)
   - [isPalindrome](#ispalindrome)
   - [reverse](#reverse)
+  - [truncate](#truncate)
 
 
 ## ArrayUtils
 
 the following utility functions are available in the `ArrayUtils` class, they can be used as a static method on the `ArrayUtils` class or as a standalone function.
+
+
+### sample
+```typescript
+/**
+ * Returns a random sample of elements from an array.
+ * @param arr The array to sample from.
+ * @param sampleSize The number of elements to include in the sample.
+ * @returns An array containing a random sample of elements from the input array.
+*/
+```
 
 
 ### chunk
@@ -351,6 +367,27 @@ the following utility functions are available in the `MathUtils` class, they can
  * @param a - The dividend.
  * @param b - The divisor.
  * @returns The remainder after dividing `a` by `b`.
+*/
+```
+
+
+### average
+```typescript
+/**
+ * Calculates the average of an array of numbers.
+ * @param arr - The array of numbers.
+ * @returns The average value.
+*/
+```
+
+
+### median
+```typescript
+/**
+ * Calculates the median value of an array of numbers.
+ *
+ * @param arr - The array of numbers.
+ * @returns The median value.
 */
 ```
 
@@ -656,6 +693,18 @@ the following utility functions are available in the `StringUtils` class, they c
 ```
 
 
+### countOccurrences
+```typescript
+/**
+ * Counts the number of occurrences of a substring within a string.
+ *
+ * @param str - The string to search within.
+ * @param substr - The substring to count occurrences of.
+ * @returns The number of occurrences of the substring within the string.
+*/
+```
+
+
 ### camelCase
 ```typescript
 /**
@@ -684,6 +733,18 @@ the following utility functions are available in the `StringUtils` class, they c
  *
  * @param str - The string to be reversed.
  * @returns The reversed string.
+*/
+```
+
+
+### truncate
+```typescript
+/**
+ * Truncates a string to a specified length and appends an optional ending.
+ * @param str The string to truncate.
+ * @param length The maximum length of the truncated string.
+ * @param ending The optional ending to append to the truncated string. Default is "...".
+ * @returns The truncated string.
 */
 ```
 
