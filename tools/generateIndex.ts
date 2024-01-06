@@ -76,6 +76,17 @@ ${individualExports}
   categoryStats[categoryName] = utilityFiles.length;
 });
 
+//clear the index.ts file for the root directory
+const indexPath = path.join(srcDir, "index.ts");
+fs.writeFileSync(indexPath, "");
+
+//Generate the index.ts file for the root directory
+srcFolders.forEach((folder: string) => {
+  const indexContent = `export * from "./${folder}";\n`;
+  const indexPath = path.join(srcDir, "index.ts");
+  fs.appendFileSync(indexPath, indexContent);
+});
+
 // Print statistics
 logColor("Index files generated successfully!", "green");
 logColor("Category Statistics:", "yellow");
