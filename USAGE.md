@@ -7,7 +7,9 @@ Here are some of the utility functions and classes available in this library:
 
 - [ArrayUtils](#arrayutils)
   - [sample](#sample)
+  - [shuffle](#shuffle)
   - [chunk](#chunk)
+  - [random](#random)
   - [unique](#unique)
   - [range](#range)
   - [flatten](#flatten)
@@ -94,6 +96,18 @@ the following utility functions are available in the `ArrayUtils` class, they ca
 ```
 
 
+### shuffle
+```typescript
+/**
+ * Shuffles the elements of an array in place.
+ *
+ * @param arr - The array to be shuffled.
+ * @returns A new array with the elements shuffled.
+ * @template T - The type of elements in the array.
+*/
+```
+
+
 ### chunk
 ```typescript
 /**
@@ -103,6 +117,16 @@ the following utility functions are available in the `ArrayUtils` class, they ca
  * @param arr The array to be chunked.
  * @param size The size of each chunk. Default is 1.
  * @returns An array of chunks, where each chunk is an array of elements from the original array.
+*/
+```
+
+
+### random
+```typescript
+/**
+ * Returns a random element from the given array.
+ * @param arr The array from which to select a random element.
+ * @returns A random element from the array.
 */
 ```
 
