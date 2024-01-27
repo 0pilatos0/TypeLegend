@@ -5,6 +5,9 @@ Here are some of the utility functions and classes available in this library:
 
 ## Table of Contents
 
+- [BenchmarkUtils](#benchmarkutils)
+  - [benchmark](#benchmark)
+
 - [ArrayUtils](#arrayutils)
   - [sample](#sample)
   - [shuffle](#shuffle)
@@ -78,6 +81,25 @@ Here are some of the utility functions and classes available in this library:
   - [isPalindrome](#ispalindrome)
   - [reverse](#reverse)
   - [truncate](#truncate)
+
+
+## BenchmarkUtils
+
+the following utility functions are available in the `BenchmarkUtils` class, they can be used as a static method on the `BenchmarkUtils` class or as a standalone function.
+
+
+### benchmark
+```typescript
+/**
+ * Measures the execution time of a function by running it multiple times.
+ * @param fn The function to benchmark.
+ * @param iterations The number of times to run the function (default: 1).
+ * @param log Whether to log the benchmark result (default: true).
+ * @param args Additional arguments to pass to the function.
+ * @returns An object containing the total execution time and average execution time.
+*/
+```
+
 
 
 ## ArrayUtils

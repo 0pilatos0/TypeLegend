@@ -1,3 +1,4 @@
+export * from "./benchmark";
 export * from "./array";
 export * from "./date";
 export * from "./function";
