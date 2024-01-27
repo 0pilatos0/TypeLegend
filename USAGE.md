@@ -6,6 +6,7 @@ Here are some of the utility functions and classes available in this library:
 ## Table of Contents
 
 - [BenchmarkUtils](#benchmarkutils)
+  - [benchmarkIterations](#benchmarkiterations)
   - [benchmark](#benchmark)
 
 - [ArrayUtils](#arrayutils)
@@ -88,15 +89,26 @@ Here are some of the utility functions and classes available in this library:
 the following utility functions are available in the `BenchmarkUtils` class, they can be used as a static method on the `BenchmarkUtils` class or as a standalone function.
 
 
-### benchmark
+### benchmarkIterations
 ```typescript
 /**
  * Measures the execution time of a function by running it multiple times.
- * @param fn The function to benchmark.
- * @param iterations The number of times to run the function (default: 1).
- * @param log Whether to log the benchmark result (default: true).
- * @param args Additional arguments to pass to the function.
- * @returns An object containing the total execution time and average execution time.
+ *
+ * @param fn - The function to be benchmarked.
+ * @param iterations - The number of times the function should be executed.
+ * @param args - The arguments to be passed to the function.
+ * @returns The total execution time in milliseconds.
+*/
+```
+
+
+### benchmark
+```typescript
+/**
+ * Measures the execution time of a function.
+ * @param fn - The function to be benchmarked.
+ * @param args - The arguments to be passed to the function.
+ * @returns The execution time in milliseconds.
 */
 ```
 
