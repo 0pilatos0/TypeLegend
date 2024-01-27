@@ -6,6 +6,7 @@ Here are some of the utility functions and classes available in this library:
 ## Table of Contents
 
 - [BenchmarkUtils](#benchmarkutils)
+  - [benchmarkAsync](#benchmarkasync)
   - [benchmarkIterations](#benchmarkiterations)
   - [benchmark](#benchmark)
 
@@ -87,6 +88,17 @@ Here are some of the utility functions and classes available in this library:
 ## BenchmarkUtils
 
 the following utility functions are available in the `BenchmarkUtils` class, they can be used as a static method on the `BenchmarkUtils` class or as a standalone function.
+
+
+### benchmarkAsync
+```typescript
+/**
+ * Measures the execution time of an asynchronous function.
+ * @param fn - The asynchronous function to be benchmarked.
+ * @param args - The arguments to be passed to the function.
+ * @returns A promise that resolves with the execution time in milliseconds.
+*/
+```
 
 
 ### benchmarkIterations
