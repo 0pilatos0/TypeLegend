@@ -76,8 +76,10 @@ Here are some of the utility functions and classes available in this library:
   - [deepClone](#deepclone)
   - [pick](#pick)
   - [keys](#keys)
+  - [hasKey](#haskey)
   - [values](#values)
   - [merge](#merge)
+  - [omit](#omit)
 
 - [StringUtils](#stringutils)
   - [capitalize](#capitalize)
@@ -760,6 +762,18 @@ the following utility functions are available in the `ObjectUtils` class, they c
 ```
 
 
+### hasKey
+```typescript
+/**
+ * Checks if an object has a specific key.
+ *
+ * @param obj - The object to check.
+ * @param key - The key to check for.
+ * @returns A boolean indicating whether the object has the specified key.
+*/
+```
+
+
 ### values
 ```typescript
 /**
@@ -781,6 +795,18 @@ the following utility functions are available in the `ObjectUtils` class, they c
  * @param  obj1 - The first object to merge.
  * @param  obj2 - The second object to merge.
  * @returns  - The merged object.
+*/
+```
+
+
+### omit
+```typescript
+/**
+ * Creates a new object with the specified keys omitted.
+ *
+ * @param obj - The object from which to omit keys.
+ * @param keys - An array of keys to omit from the object.
+ * @returns A new object with the specified keys omitted.
 */
 ```
 
