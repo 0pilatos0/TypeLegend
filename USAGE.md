@@ -46,7 +46,10 @@ Here are some of the utility functions and classes available in this library:
 - [MathUtils](#mathutils)
   - [modulus](#modulus)
   - [average](#average)
+  - [factorial](#factorial)
   - [median](#median)
+  - [lcm](#lcm)
+  - [gdc](#gdc)
   - [ceil](#ceil)
   - [divide](#divide)
   - [floor](#floor)
@@ -451,6 +454,17 @@ the following utility functions are available in the `MathUtils` class, they can
 ```
 
 
+### factorial
+```typescript
+/**
+ * Calculates the factorial of a given number.
+ * @param n - The number to calculate the factorial for.
+ * @returns The factorial of the given number.
+ * @throws  If the given number is negative.
+*/
+```
+
+
 ### median
 ```typescript
 /**
@@ -458,6 +472,30 @@ the following utility functions are available in the `MathUtils` class, they can
  *
  * @param arr - The array of numbers.
  * @returns The median value.
+*/
+```
+
+
+### lcm
+```typescript
+/**
+ * Calculates the least common multiple (LCM) of two numbers.
+ *
+ * @param a - The first number.
+ * @param b - The second number.
+ * @returns The least common multiple of `a` and `b`.
+*/
+```
+
+
+### gdc
+```typescript
+/**
+ * Calculates the greatest common divisor (GCD) of two numbers.
+ *
+ * @param a - The first number.
+ * @param b - The second number.
+ * @returns The greatest common divisor of `a` and `b`.
 */
 ```
 
