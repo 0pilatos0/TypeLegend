@@ -12,6 +12,7 @@ Here are some of the utility functions and classes available in this library:
 
 - [ArrayUtils](#arrayutils)
   - [sample](#sample)
+  - [intersect](#intersect)
   - [shuffle](#shuffle)
   - [chunk](#chunk)
   - [random](#random)
@@ -22,12 +23,15 @@ Here are some of the utility functions and classes available in this library:
 - [DateUtils](#dateutils)
   - [addDays](#adddays)
   - [currentDayName](#currentdayname)
+  - [isBefore](#isbefore)
   - [subtractDays](#subtractdays)
   - [currentDate](#currentdate)
   - [getWeekNumber](#getweeknumber)
   - [isLeapYear](#isleapyear)
+  - [addMonths](#addmonths)
   - [currentYear](#currentyear)
   - [currentMonthName](#currentmonthname)
+  - [isWeekend](#isweekend)
   - [differenceInDays](#differenceindays)
   - [currentMonth](#currentmonth)
   - [currentDay](#currentday)
@@ -48,6 +52,8 @@ Here are some of the utility functions and classes available in this library:
   - [average](#average)
   - [factorial](#factorial)
   - [median](#median)
+  - [percentOf](#percentof)
+  - [randomInt](#randomint)
   - [lcm](#lcm)
   - [gdc](#gdc)
   - [ceil](#ceil)
@@ -63,10 +69,12 @@ Here are some of the utility functions and classes available in this library:
 - [NumberUtils](#numberutils)
   - [toRoman](#toroman)
   - [toBinary](#tobinary)
+  - [toOrdinal](#toordinal)
   - [fromRoman](#fromroman)
   - [randomNumber](#randomnumber)
   - [fromHex](#fromhex)
   - [toHex](#tohex)
+  - [fromOrdinal](#fromordinal)
   - [isOdd](#isodd)
   - [isEven](#iseven)
   - [formatCurrency](#formatcurrency)
@@ -143,6 +151,19 @@ the following utility functions are available in the `ArrayUtils` class, they ca
  * @param arr The array to sample from.
  * @param sampleSize The number of elements to include in the sample.
  * @returns An array containing a random sample of elements from the input array.
+*/
+```
+
+
+### intersect
+```typescript
+/**
+ * Returns an array containing the elements that are present in both input arrays.
+ *
+ * @template T - The type of the elements in the arrays.
+ * @param a - The first input array.
+ * @param b - The second input array.
+ * @returns An array containing the elements that are present in both input arrays.
 */
 ```
 
@@ -244,6 +265,18 @@ the following utility functions are available in the `DateUtils` class, they can
 ```
 
 
+### isBefore
+```typescript
+/**
+ * Checks if date `a` is before date `b`.
+ *
+ * @param a - The first date to compare.
+ * @param b - The second date to compare.
+ * @returns `true` if `a` is before `b`, `false` otherwise.
+*/
+```
+
+
 ### subtractDays
 ```typescript
 /**
@@ -286,6 +319,18 @@ the following utility functions are available in the `DateUtils` class, they can
 ```
 
 
+### addMonths
+```typescript
+/**
+ * Adds the specified number of months to a given date.
+ *
+ * @param  date - The date to which the months should be added.
+ * @param  months - The number of months to add.
+ * @returns  - The new date after adding the specified number of months.
+*/
+```
+
+
 ### currentYear
 ```typescript
 /**
@@ -300,6 +345,16 @@ the following utility functions are available in the `DateUtils` class, they can
 /**
  * Returns the name of the current month.
  * @returns  The name of the current month.
+*/
+```
+
+
+### isWeekend
+```typescript
+/**
+ * Checks if a given date falls on a weekend.
+ * @param  date - The date to check.
+ * @returns  - Returns true if the date falls on a weekend, otherwise returns false.
 */
 ```
 
@@ -478,6 +533,30 @@ the following utility functions are available in the `MathUtils` class, they can
 ```
 
 
+### percentOf
+```typescript
+/**
+ * Calculates the percentage of a number in relation to another number.
+ *
+ * @param a - The number to calculate the percentage of.
+ * @param b - The total number to calculate the percentage against.
+ * @returns The calculated percentage.
+*/
+```
+
+
+### randomInt
+```typescript
+/**
+ * Generates a random integer between the specified minimum and maximum values (inclusive).
+ *
+ * @param min - The minimum value of the range.
+ * @param max - The maximum value of the range.
+ * @returns A random integer between the minimum and maximum values.
+*/
+```
+
+
 ### lcm
 ```typescript
 /**
@@ -633,6 +712,17 @@ the following utility functions are available in the `NumberUtils` class, they c
 ```
 
 
+### toOrdinal
+```typescript
+/**
+ * Converts a number to its ordinal representation.
+ *
+ * @param num - The number to convert.
+ * @returns The ordinal representation of the number.
+*/
+```
+
+
 ### fromRoman
 ```typescript
 /**
@@ -672,6 +762,17 @@ the following utility functions are available in the `NumberUtils` class, they c
  * Converts a number to its hexadecimal representation.
  * @param value - The number to convert.
  * @returns The hexadecimal representation of the number.
+*/
+```
+
+
+### fromOrdinal
+```typescript
+/**
+ * Converts a string representing an ordinal number to its corresponding numeric value.
+ *
+ * @param n - The string representing the ordinal number. (e.g. "1st", "2nd", "3rd", "4th", etc.)
+ * @returns The numeric value of the ordinal number.
 */
 ```
 

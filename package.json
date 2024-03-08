@@ -1,6 +1,6 @@
 {
   "name": "typelegend",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,8 +32,8 @@
   "homepage": "https://github.com/0pilatos0/TypeLegend#readme",
   "devDependencies": {
     "bun-types": "latest",
-    "typescript": "^5.2.2",
-    "tsup": "^7.2.0"
+    "typescript": "^5.4.2",
+    "tsup": "^8.0.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
