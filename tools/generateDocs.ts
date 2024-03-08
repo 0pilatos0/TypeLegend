@@ -3,6 +3,7 @@ const path = require("path");
 
 const srcDir = path.join(__dirname, "../src");
 const readmePath = path.join(__dirname, "../USAGE.md");
+const README = path.join(__dirname, "../README.md");
 const srcFolders = fs.readdirSync(srcDir).filter((file: string) => {
   return fs.statSync(path.join(srcDir, file)).isDirectory();
 });
@@ -146,3 +147,58 @@ function writeReadme() {
 
 // Generate the README file
 writeReadme();
+
+//get the count of the utility functions and classes in 2 variables, read dir recursively and get the count of the utility functions and classes
+const files: string[] = [];
+
+srcFolders.forEach((folder: string) => {
+  const categoryPath = path.join(srcDir, folder);
+  const utilityFiles = fs
+    .readdirSync(categoryPath)
+    .filter((file: string) => file.endsWith(".ts"));
+  utilityFiles.forEach((file: string) => {
+    files.push(path.join(folder, file));
+  });
+});
+
+let utilityFunctionsCount = 0;
+let utilityClassesCount = 0;
+
+files.forEach((file: string) => {
+  const filePath = path.join(srcDir, file);
+  const fileContent = fs.readFileSync(filePath, "utf8");
+  const functionRegex = /export function (\w+)/g;
+  const classRegex = /export class (\w+)/g;
+  let match;
+  while ((match = functionRegex.exec(fileContent)) !== null) {
+    utilityFunctionsCount++;
+  }
+  while ((match = classRegex.exec(fileContent)) !== null) {
+    utilityClassesCount++;
+  }
+});
+
+console.log(
+  colors.cyan,
+  `Found ${utilityFunctionsCount} utility functions and ${utilityClassesCount} utility classes.`,
+  colors.reset
+);
+
+// //replace the 2 numbers in the README.md file
+// - Total amount of typesafe utility functions: **0**
+// - Total amount of typesafe utility classes: **0**
+
+const readmeContent = fs.readFileSync(README, "utf8");
+const updatedReadmeContent = readmeContent;
+const updatedReadmeContent1 = updatedReadmeContent.replace(
+  /Total amount of typesafe utility functions: \*\*\d+\*\*/,
+  `Total amount of typesafe utility functions: **${utilityFunctionsCount}**`
+);
+
+const updatedReadmeContent2 = updatedReadmeContent1.replace(
+  /Total amount of typesafe utility classes: \*\*\d+\*\*/,
+  `Total amount of typesafe utility classes: **${utilityClassesCount}**`
+);
+
+fs.writeFileSync(README, updatedReadmeContent2, "utf8");
+console.log(colors.green, "README.md updated successfully!", colors.reset);
