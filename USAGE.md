@@ -85,6 +85,7 @@ Here are some of the utility functions and classes available in this library:
   - [pick](#pick)
   - [keys](#keys)
   - [hasKey](#haskey)
+  - [mapKeys](#mapkeys)
   - [values](#values)
   - [merge](#merge)
   - [omit](#omit)
@@ -871,6 +872,18 @@ the following utility functions are available in the `ObjectUtils` class, they c
  * @param obj - The object to check.
  * @param key - The key to check for.
  * @returns A boolean indicating whether the object has the specified key.
+*/
+```
+
+
+### mapKeys
+```typescript
+/**
+ * Maps the keys of an object using a provided function.
+ *
+ * @param obj - The object whose keys will be mapped.
+ * @param fn - The function to apply to each key-value pair. It takes the key and value as arguments and returns the new key.
+ * @returns A new object with the mapped keys.
 */
 ```
 
