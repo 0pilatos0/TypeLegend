@@ -11,8 +11,11 @@ Here are some of the utility functions and classes available in this library:
   - [benchmark](#benchmark)
 
 - [ArrayUtils](#arrayutils)
+  - [union](#union)
+  - [diff](#diff)
   - [sample](#sample)
   - [intersect](#intersect)
+  - [zip](#zip)
   - [shuffle](#shuffle)
   - [chunk](#chunk)
   - [random](#random)
@@ -40,6 +43,7 @@ Here are some of the utility functions and classes available in this library:
   - [throttle](#throttle)
   - [debounce](#debounce)
   - [curry](#curry)
+  - [retry](#retry)
   - [compose](#compose)
   - [memoize](#memoize)
 
@@ -145,6 +149,32 @@ the following utility functions are available in the `BenchmarkUtils` class, the
 the following utility functions are available in the `ArrayUtils` class, they can be used as a static method on the `ArrayUtils` class or as a standalone function.
 
 
+### union
+```typescript
+/**
+ * Returns a new array that contains unique elements from both input arrays.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param arr1 - The first input array.
+ * @param arr2 - The second input array.
+ * @returns A new array that contains unique elements from both input arrays.
+*/
+```
+
+
+### diff
+```typescript
+/**
+ * Returns an array containing the elements from `arr1` that are not present in `arr2`.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param  arr1 - The first array.
+ * @param  arr2 - The second array.
+ * @returns  - The difference between `arr1` and `arr2`.
+*/
+```
+
+
 ### sample
 ```typescript
 /**
@@ -165,6 +195,20 @@ the following utility functions are available in the `ArrayUtils` class, they ca
  * @param a - The first input array.
  * @param b - The second input array.
  * @returns An array containing the elements that are present in both input arrays.
+*/
+```
+
+
+### zip
+```typescript
+/**
+ * Zips two arrays together, creating an array of tuples where each tuple contains
+ * corresponding elements from both input arrays.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param  arr1 - The first input array.
+ * @param  arr2 - The second input array.
+ * @returns  - An array of tuples containing corresponding elements from both input arrays.
 */
 ```
 
@@ -429,6 +473,17 @@ the following utility functions are available in the `FunctionUtils` class, they
  * Curries a function, allowing partial application of arguments.
  * @param fn - The function to curry.
  * @returns A curried function that can be called with partial arguments.
+*/
+```
+
+
+### retry
+```typescript
+/**
+ * Retries a given function a specified number of times if it fails.
+ * @param fn - The function to be retried.
+ * @param retries - The number of times to retry the function.
+ * @returns A promise that resolves with the result of the function if it succeeds, or rejects with the last error if it fails after all retries.
 */
 ```
 
