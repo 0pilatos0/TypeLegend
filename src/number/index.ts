@@ -1,5 +1,6 @@
 
 import { toRoman } from "./toRoman";
+import { padNumber } from "./padNumber";
 import { toBinary } from "./toBinary";
 import { toOrdinal } from "./toOrdinal";
 import { fromRoman } from "./fromRoman";
@@ -14,6 +15,7 @@ import { fromBinary } from "./fromBinary";
 
 export class NumberUtils {
   static toRoman: typeof toRoman = toRoman;
+  static padNumber: typeof padNumber = padNumber;
   static toBinary: typeof toBinary = toBinary;
   static toOrdinal: typeof toOrdinal = toOrdinal;
   static fromRoman: typeof fromRoman = fromRoman;
@@ -28,6 +30,7 @@ export class NumberUtils {
 }
 
 export { toRoman } from "./toRoman";
+export { padNumber } from "./padNumber";
 export { toBinary } from "./toBinary";
 export { toOrdinal } from "./toOrdinal";
 export { fromRoman } from "./fromRoman";

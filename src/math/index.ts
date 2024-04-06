@@ -1,9 +1,12 @@
 
 import { modulus } from "./modulus";
+import { circumference } from "./circumference";
 import { average } from "./average";
+import { areaTriangle } from "./areaTriangle";
 import { factorial } from "./factorial";
 import { median } from "./median";
 import { percentOf } from "./percentOf";
+import { areaCircle } from "./areaCircle";
 import { randomInt } from "./randomInt";
 import { lcm } from "./lcm";
 import { gdc } from "./gdc";
@@ -15,14 +18,21 @@ import { isPrime } from "./isPrime";
 import { sqrt } from "./sqrt";
 import { subtract } from "./subtract";
 import { add } from "./add";
+import { lerp } from "./lerp";
+import { volumeSphere } from "./volumeSphere";
 import { pow } from "./pow";
+import { ratio } from "./ratio";
+import { areaRectangle } from "./areaRectangle";
 
 export class MathUtils {
   static modulus: typeof modulus = modulus;
+  static circumference: typeof circumference = circumference;
   static average: typeof average = average;
+  static areaTriangle: typeof areaTriangle = areaTriangle;
   static factorial: typeof factorial = factorial;
   static median: typeof median = median;
   static percentOf: typeof percentOf = percentOf;
+  static areaCircle: typeof areaCircle = areaCircle;
   static randomInt: typeof randomInt = randomInt;
   static lcm: typeof lcm = lcm;
   static gdc: typeof gdc = gdc;
@@ -34,14 +44,21 @@ export class MathUtils {
   static sqrt: typeof sqrt = sqrt;
   static subtract: typeof subtract = subtract;
   static add: typeof add = add;
+  static lerp: typeof lerp = lerp;
+  static volumeSphere: typeof volumeSphere = volumeSphere;
   static pow: typeof pow = pow;
+  static ratio: typeof ratio = ratio;
+  static areaRectangle: typeof areaRectangle = areaRectangle;
 }
 
 export { modulus } from "./modulus";
+export { circumference } from "./circumference";
 export { average } from "./average";
+export { areaTriangle } from "./areaTriangle";
 export { factorial } from "./factorial";
 export { median } from "./median";
 export { percentOf } from "./percentOf";
+export { areaCircle } from "./areaCircle";
 export { randomInt } from "./randomInt";
 export { lcm } from "./lcm";
 export { gdc } from "./gdc";
@@ -53,5 +70,9 @@ export { isPrime } from "./isPrime";
 export { sqrt } from "./sqrt";
 export { subtract } from "./subtract";
 export { add } from "./add";
+export { lerp } from "./lerp";
+export { volumeSphere } from "./volumeSphere";
 export { pow } from "./pow";
+export { ratio } from "./ratio";
+export { areaRectangle } from "./areaRectangle";
 

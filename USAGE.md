@@ -53,10 +53,13 @@ Here are some of the utility functions and classes available in this library:
 
 - [MathUtils](#mathutils)
   - [modulus](#modulus)
+  - [circumference](#circumference)
   - [average](#average)
+  - [areaTriangle](#areatriangle)
   - [factorial](#factorial)
   - [median](#median)
   - [percentOf](#percentof)
+  - [areaCircle](#areacircle)
   - [randomInt](#randomint)
   - [lcm](#lcm)
   - [gdc](#gdc)
@@ -68,10 +71,15 @@ Here are some of the utility functions and classes available in this library:
   - [sqrt](#sqrt)
   - [subtract](#subtract)
   - [add](#add)
+  - [lerp](#lerp)
+  - [volumeSphere](#volumesphere)
   - [pow](#pow)
+  - [ratio](#ratio)
+  - [areaRectangle](#arearectangle)
 
 - [NumberUtils](#numberutils)
   - [toRoman](#toroman)
+  - [padNumber](#padnumber)
   - [toBinary](#tobinary)
   - [toOrdinal](#toordinal)
   - [fromRoman](#fromroman)
@@ -557,12 +565,34 @@ the following utility functions are available in the `MathUtils` class, they can
 ```
 
 
+### circumference
+```typescript
+/**
+ * Calculates the circumference of a circle given the radius.
+ * @param radius - The radius of the circle.
+ * @returns The circumference of the circle.
+*/
+```
+
+
 ### average
 ```typescript
 /**
  * Calculates the average of an array of numbers.
  * @param arr - The array of numbers.
  * @returns The average value.
+*/
+```
+
+
+### areaTriangle
+```typescript
+/**
+ * Calculates the area of a triangle.
+ *
+ * @param base - The length of the base of the triangle.
+ * @param height - The height of the triangle.
+ * @returns The area of the triangle.
 */
 ```
 
@@ -597,6 +627,16 @@ the following utility functions are available in the `MathUtils` class, they can
  * @param a - The number to calculate the percentage of.
  * @param b - The total number to calculate the percentage against.
  * @returns The calculated percentage.
+*/
+```
+
+
+### areaCircle
+```typescript
+/**
+ * Calculates the area of a circle.
+ * @param radius - The radius of the circle.
+ * @returns The area of the circle.
 */
 ```
 
@@ -731,6 +771,28 @@ the following utility functions are available in the `MathUtils` class, they can
 ```
 
 
+### lerp
+```typescript
+/**
+ * Linearly interpolates between two numbers.
+ * @param from - The starting value.
+ * @param to - The ending value.
+ * @param t - The interpolation factor (between 0 and 1).
+ * @returns The interpolated value.
+*/
+```
+
+
+### volumeSphere
+```typescript
+/**
+ * Calculates the volume of a sphere given its radius.
+ * @param radius The radius of the sphere.
+ * @returns The volume of the sphere.
+*/
+```
+
+
 ### pow
 ```typescript
 /**
@@ -738,6 +800,30 @@ the following utility functions are available in the `MathUtils` class, they can
  * @param a - The base number.
  * @param b - The exponent.
  * @returns The result of raising `a` to the power of `b`.
+*/
+```
+
+
+### ratio
+```typescript
+/**
+ * Calculates the ratio between two numbers.
+ *
+ * @param a - The numerator.
+ * @param b - The denominator.
+ * @returns The ratio of a to b.
+*/
+```
+
+
+### areaRectangle
+```typescript
+/**
+ * Calculates the area of a rectangle.
+ *
+ * @param length - The length of the rectangle.
+ * @param width - The width of the rectangle.
+ * @returns The area of the rectangle.
 */
 ```
 
@@ -754,6 +840,18 @@ the following utility functions are available in the `NumberUtils` class, they c
  * Converts a number to its Roman numeral representation.
  * @param num - The number to be converted to Roman numeral.
  * @returns A string representing the Roman numeral.
+*/
+```
+
+
+### padNumber
+```typescript
+/**
+ * Pads a number with leading zeros to a specified length.
+ *
+ * @param num - The number to pad.
+ * @param length - The desired length of the padded number.
+ * @returns The padded number as a string.
 */
 ```
 

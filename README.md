@@ -6,7 +6,7 @@
 
 TypeLegend is a versatile and typesafe utility library designed to simplify common tasks in your TypeScript projects. With TypeLegend, you can harness the power of TypeScript's strong typing system to write safer and more maintainable code.
 
-- Total amount of typesafe utility functions: **79**
+- Total amount of typesafe utility functions: **87**
 - Total amount of typesafe utility classes: **9**
 
 ## Features
