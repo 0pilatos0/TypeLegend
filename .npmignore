@@ -4,3 +4,5 @@ src/
 tools/
 test/
 tsconfig.json
+bun.lockb
+USAGE.md
