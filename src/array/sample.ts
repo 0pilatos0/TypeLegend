@@ -5,12 +5,12 @@
  * @returns An array containing a random sample of elements from the input array.
  */
 export function sample<T>(arr: T[], sampleSize: number): T[] {
-  const result: T[] = [];
-  const arrCopy = [...arr];
-  while (result.length < sampleSize && arrCopy.length > 0) {
-    const randomIndex = Math.floor(Math.random() * arrCopy.length);
-    result.push(arrCopy[randomIndex]);
-    arrCopy.splice(randomIndex, 1);
-  }
-  return result;
+	const result: T[] = [];
+	const arrCopy = [...arr];
+	while (result.length < sampleSize && arrCopy.length > 0) {
+		const randomIndex = Math.floor(Math.random() * arrCopy.length);
+		result.push(arrCopy[randomIndex]);
+		arrCopy.splice(randomIndex, 1);
+	}
+	return result;
 }

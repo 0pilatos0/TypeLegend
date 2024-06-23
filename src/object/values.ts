@@ -6,5 +6,5 @@
  * @returns An array containing the values of the object.
  */
 export function values<T extends object>(obj: T): T[keyof T][] {
-  return Object.values(obj);
+	return Object.values(obj);
 }

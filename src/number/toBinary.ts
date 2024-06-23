@@ -4,5 +4,5 @@
  * @returns The binary representation of the number.
  */
 export function toBinary(value: number): string {
-  return value.toString(2);
+	return value.toString(2);
 }

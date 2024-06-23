@@ -5,5 +5,5 @@
  * @returns The result of raising `a` to the power of `b`.
  */
 export function pow(a: number, b: number): number {
-  return a ** b;
+	return a ** b;
 }

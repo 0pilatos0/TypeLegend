@@ -6,10 +6,10 @@
  * @returns A new object with the mapped keys.
  */
 export function mapKeys<T extends { [s: string]: unknown }>(
-  obj: T,
-  fn: (key: string, value: any) => any
+	obj: T,
+	fn: (key: string, value: any) => any,
 ): Record<string, any> {
-  return Object.fromEntries(
-    Object.entries(obj).map(([key, value]) => [fn(key, value), value])
-  );
+	return Object.fromEntries(
+		Object.entries(obj).map(([key, value]) => [fn(key, value), value]),
+	);
 }

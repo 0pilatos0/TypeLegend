@@ -4,5 +4,5 @@
  * @returns A random element from the array.
  */
 export function random<T>(arr: T[]): T {
-  return arr[Math.floor(Math.random() * arr.length)];
+	return arr[Math.floor(Math.random() * arr.length)];
 }

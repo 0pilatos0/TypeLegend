@@ -5,9 +5,9 @@
  * @returns The execution time in milliseconds.
  */
 export function benchmark(fn: Function, ...args: any[]): number {
-  const start = performance.now();
-  fn(...args);
-  const end = performance.now();
+	const start = performance.now();
+	fn(...args);
+	const end = performance.now();
 
-  return end - start;
+	return end - start;
 }

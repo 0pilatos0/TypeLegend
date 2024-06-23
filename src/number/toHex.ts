@@ -4,5 +4,5 @@
  * @returns The hexadecimal representation of the number.
  */
 export function toHex(value: number): string {
-  return value.toString(16);
+	return value.toString(16);
 }

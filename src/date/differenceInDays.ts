@@ -5,7 +5,7 @@
  * @returns The difference in days between the two dates.
  */
 export function differenceInDays(dateLeft: Date, dateRight: Date): number {
-  return Math.round(
-    (dateRight.getTime() - dateLeft.getTime()) / (1000 * 3600 * 24)
-  );
+	return Math.round(
+		(dateRight.getTime() - dateLeft.getTime()) / (1000 * 3600 * 24),
+	);
 }

@@ -7,10 +7,10 @@
  * @returns {T[]} - An array of matched strings.
  */
 export function matchAll<T extends string>(str: string, regex: RegExp): T[] {
-  const matches = [];
-  let match;
-  while ((match = regex.exec(str)) !== null) {
-    matches.push(match[0] as T);
-  }
-  return matches;
+	const matches = [];
+	let match: RegExpExecArray | null;
+	while ((match = regex.exec(str)) !== null) {
+		matches.push(match[0] as T);
+	}
+	return matches;
 }

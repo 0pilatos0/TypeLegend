@@ -6,5 +6,5 @@
  * @returns The calculated percentage.
  */
 export function percentOf(a: number, b: number): number {
-  return (a / b) * 100;
+	return (a / b) * 100;
 }

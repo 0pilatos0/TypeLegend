@@ -1,24 +1,24 @@
 
-import { compose } from "./compose";
-import { curry } from "./curry";
-import { debounce } from "./debounce";
-import { memoize } from "./memoize";
-import { retry } from "./retry";
 import { throttle } from "./throttle";
+import { debounce } from "./debounce";
+import { curry } from "./curry";
+import { retry } from "./retry";
+import { compose } from "./compose";
+import { memoize } from "./memoize";
 
 export class FunctionUtils {
-  static compose: typeof compose = compose;
-  static curry: typeof curry = curry;
-  static debounce: typeof debounce = debounce;
-  static memoize: typeof memoize = memoize;
-  static retry: typeof retry = retry;
   static throttle: typeof throttle = throttle;
+  static debounce: typeof debounce = debounce;
+  static curry: typeof curry = curry;
+  static retry: typeof retry = retry;
+  static compose: typeof compose = compose;
+  static memoize: typeof memoize = memoize;
 }
 
-export { compose } from "./compose";
-export { curry } from "./curry";
-export { debounce } from "./debounce";
-export { memoize } from "./memoize";
-export { retry } from "./retry";
 export { throttle } from "./throttle";
+export { debounce } from "./debounce";
+export { curry } from "./curry";
+export { retry } from "./retry";
+export { compose } from "./compose";
+export { memoize } from "./memoize";
 

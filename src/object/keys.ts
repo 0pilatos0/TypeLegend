@@ -6,8 +6,8 @@
  * @returns An array of keys from the object.
  */
 export function keys<T extends object>(obj: T): (keyof T)[] {
-  return [
-    ...Object.keys(obj),
-    ...Object.getOwnPropertySymbols(obj),
-  ] as (keyof T)[];
+	return [
+		...Object.keys(obj),
+		...Object.getOwnPropertySymbols(obj),
+	] as (keyof T)[];
 }

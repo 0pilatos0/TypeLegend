@@ -1,15 +1,15 @@
 
-import { benchmark } from "./benchmark";
 import { benchmarkAsync } from "./benchmarkAsync";
 import { benchmarkIterations } from "./benchmarkIterations";
+import { benchmark } from "./benchmark";
 
 export class BenchmarkUtils {
-  static benchmark: typeof benchmark = benchmark;
   static benchmarkAsync: typeof benchmarkAsync = benchmarkAsync;
   static benchmarkIterations: typeof benchmarkIterations = benchmarkIterations;
+  static benchmark: typeof benchmark = benchmark;
 }
 
-export { benchmark } from "./benchmark";
 export { benchmarkAsync } from "./benchmarkAsync";
 export { benchmarkIterations } from "./benchmarkIterations";
+export { benchmark } from "./benchmark";
 

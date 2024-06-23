@@ -5,5 +5,5 @@
  * @template T The type of elements in the array.
  */
 export function unique<T>(arr: T[]): T[] {
-  return arr.filter((value, index, self) => self.indexOf(value) === index);
+	return arr.filter((value, index, self) => self.indexOf(value) === index);
 }

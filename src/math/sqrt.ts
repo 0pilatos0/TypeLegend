@@ -4,5 +4,5 @@
  * @returns The square root of the input number.
  */
 export function sqrt(a: number): number {
-  return Math.sqrt(a);
+	return Math.sqrt(a);
 }

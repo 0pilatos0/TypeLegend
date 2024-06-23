@@ -5,5 +5,5 @@
  * @returns The numeric value of the ordinal number.
  */
 export function fromOrdinal(n: string): number {
-  return parseInt(n.replace(/\D/g, ""));
+	return Number.parseInt(n.replace(/\D/g, ""));
 }

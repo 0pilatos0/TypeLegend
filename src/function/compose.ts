@@ -6,8 +6,5 @@
  * @returns {(arg: T) => T} - The composed function.
  */
 export function compose<T>(...fns: ((arg: T) => T)[]): (arg: T) => T {
-  return function (x: T): T {
-    return fns.reduceRight((v, f) => f(v), x);
-  };
-    console.log("Hello World:")
+	return (x: T): T => fns.reduceRight((v, f) => f(v), x);
 }

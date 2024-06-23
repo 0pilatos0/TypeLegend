@@ -6,5 +6,5 @@
  * @returns The formatted currency string.
  */
 export function formatCurrency(num: number, currency = "$"): string {
-  return `${currency}${num.toFixed(2)}`;
+	return `${currency}${num.toFixed(2)}`;
 }

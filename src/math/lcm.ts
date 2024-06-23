@@ -8,12 +8,12 @@ import { gdc } from "./gdc";
  * @returns The least common multiple of `a` and `b`.
  */
 export function lcm(a: number, b: number): number {
-  if (a === 0 || b === 0) {
-    return 0;
-  }
+	if (a === 0 || b === 0) {
+		return 0;
+	}
 
-  const absA = Math.abs(a);
-  const absB = Math.abs(b);
+	const absA = Math.abs(a);
+	const absB = Math.abs(b);
 
-  return (absA * absB) / gdc(absA, absB);
+	return (absA * absB) / gdc(absA, absB);
 }

@@ -5,5 +5,5 @@
  * @template T - The type of elements in the array.
  */
 export function compact<T>(array: (T | null | undefined)[]): T[] {
-  return array.filter((item): item is T => Boolean(item));
+	return array.filter((item): item is T => Boolean(item));
 }

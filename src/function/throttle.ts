@@ -8,24 +8,27 @@
  * @returns {(...args: Parameters<T>) => void} - The throttled function.
  */
 export function throttle<T extends (...args: any[]) => any>(
-  func: T,
-  limit: number
+	func: T,
+	limit: number,
 ): (...args: Parameters<T>) => void {
-  let lastFunc: Timer | null = null;
-  let lastRan: number | null = null;
+	let lastFunc: Timer | null = null;
+	let lastRan: number | null = null;
 
-  return function (...args: Parameters<T>): void {
-    if (!lastRan) {
-      func(...args);
-      lastRan = Date.now();
-    } else {
-      clearTimeout(lastFunc as Timer);
-      lastFunc = setTimeout(() => {
-        if (Date.now() - (lastRan as number) >= limit) {
-          func(...args);
-          lastRan = Date.now();
-        }
-      }, limit - (Date.now() - (lastRan as number)));
-    }
-  };
+	return (...args: Parameters<T>): void => {
+		if (!lastRan) {
+			func(...args);
+			lastRan = Date.now();
+		} else {
+			clearTimeout(lastFunc as Timer);
+			lastFunc = setTimeout(
+				() => {
+					if (Date.now() - (lastRan as number) >= limit) {
+						func(...args);
+						lastRan = Date.now();
+					}
+				},
+				limit - (Date.now() - (lastRan as number)),
+			);
+		}
+	};
 }

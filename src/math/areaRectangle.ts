@@ -6,13 +6,13 @@
  * @returns The area of the rectangle.
  */
 export function areaRectangle(length: number, width: number): number {
-  if (length === 0 || width === 0) {
-    return 0;
-  }
+	if (length === 0 || width === 0) {
+		return 0;
+	}
 
-  if (length < 0 || width < 0) {
-    return NaN;
-  }
+	if (length < 0 || width < 0) {
+		return Number.NaN;
+	}
 
-  return length * width;
+	return length * width;
 }

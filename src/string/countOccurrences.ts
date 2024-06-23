@@ -6,5 +6,5 @@
  * @returns The number of occurrences of the substring within the string.
  */
 export function countOccurrences(str: string, substr: string): number {
-  return str.split(substr).length - 1;
+	return str.split(substr).length - 1;
 }

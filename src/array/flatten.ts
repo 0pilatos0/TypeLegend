@@ -6,9 +6,9 @@
  * @template T The type of elements in the array.
  */
 export function flatten<T>(arr: any[]): T[] {
-  return arr.reduce(
-    (acc, val) =>
-      Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
-    []
-  );
+	return arr.reduce(
+		(acc, val) =>
+			Array.isArray(val) ? acc.concat(flatten(val)) : acc.concat(val),
+		[],
+	);
 }

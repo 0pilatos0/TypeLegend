@@ -4,5 +4,5 @@
  * @returns The volume of the sphere.
  */
 export function volumeSphere(radius: number): number {
-  return (4 / 3) * Math.PI * radius ** 3;
+	return (4 / 3) * Math.PI * radius ** 3;
 }

@@ -6,8 +6,8 @@
  * @returns The greatest common divisor of `a` and `b`.
  */
 export function gdc(a: number, b: number): number {
-  if (b === 0) {
-    return a;
-  }
-  return gdc(b, a % b);
+	if (b === 0) {
+		return a;
+	}
+	return gdc(b, a % b);
 }

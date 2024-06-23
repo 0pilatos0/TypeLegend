@@ -7,5 +7,5 @@
  * @returns {T[]} A new array containing the extracted portion of the original array.
  */
 export function range<T>(arr: T[], start = 0, end = arr.length): T[] {
-  return arr.slice(start, end);
+	return arr.slice(start, end);
 }

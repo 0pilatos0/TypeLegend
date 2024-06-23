@@ -7,8 +7,8 @@
  * @returns The snake case representation of the input string.
  */
 export function snakeCase(str: string): string {
-  return str
-    .replace(/([a-z])([A-Z])/g, "$1_$2")
-    .replace(/\W+/g, "_")
-    .toLowerCase();
+	return str
+		.replace(/([a-z])([A-Z])/g, "$1_$2")
+		.replace(/\W+/g, "_")
+		.toLowerCase();
 }

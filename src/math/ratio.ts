@@ -6,5 +6,5 @@
  * @returns The ratio of a to b.
  */
 export function ratio(a: number, b: number): number {
-  return a / b;
+	return a / b;
 }

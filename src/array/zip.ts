@@ -8,6 +8,6 @@
  * @returns {[T, T][]} - An array of tuples containing corresponding elements from both input arrays.
  */
 export function zip<T>(arr1: T[], arr2: T[]): [T, T][] {
-  const minLength = Math.min(arr1.length, arr2.length);
-  return arr1.slice(0, minLength).map((value, index) => [value, arr2[index]]);
+	const minLength = Math.min(arr1.length, arr2.length);
+	return arr1.slice(0, minLength).map((value, index) => [value, arr2[index]]);
 }

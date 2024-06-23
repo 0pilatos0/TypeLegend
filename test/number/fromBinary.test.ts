@@ -1,13 +1,13 @@
-import { expect, describe, it } from "bun:test";
+import { describe, expect, it } from "bun:test";
 import { fromBinary } from "../../src/number/fromBinary";
 
 describe("fromBinary", () => {
-  it("should convert a binary string to a number", () => {
-    const binaryString = "101010";
-    const expectedNumber = 42;
+	it("should convert a binary string to a number", () => {
+		const binaryString = "101010";
+		const expectedNumber = 42;
 
-    const result = fromBinary(binaryString);
+		const result = fromBinary(binaryString);
 
-    expect(result).toEqual(expectedNumber);
-  });
+		expect(result).toEqual(expectedNumber);
+	});
 });

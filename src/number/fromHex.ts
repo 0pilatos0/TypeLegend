@@ -5,5 +5,5 @@
  * @returns The converted number.
  */
 export function fromHex(hexString: string): number {
-  return parseInt(hexString, 16);
+	return Number.parseInt(hexString, 16);
 }

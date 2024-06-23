@@ -3,5 +3,5 @@
  * @returns {number} The current year.
  */
 export function currentYear(): number {
-  return new Date().getFullYear();
+	return new Date().getFullYear();
 }

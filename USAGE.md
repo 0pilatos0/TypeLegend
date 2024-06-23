@@ -5,295 +5,119 @@ Here are some of the utility functions and classes available in this library:
 
 ## Table of Contents
 
-- [ArrayUtils](#arrayutils)
-  - [chunk](#chunk)
-  - [compact](#compact)
-  - [diff](#diff)
-  - [flatten](#flatten)
-  - [intersect](#intersect)
-  - [partition](#partition)
-  - [random](#random)
-  - [range](#range)
-  - [sample](#sample)
-  - [shuffle](#shuffle)
-  - [union](#union)
-  - [unique](#unique)
-  - [zip](#zip)
-
 - [BenchmarkUtils](#benchmarkutils)
-  - [benchmark](#benchmark)
   - [benchmarkAsync](#benchmarkasync)
   - [benchmarkIterations](#benchmarkiterations)
+  - [benchmark](#benchmark)
+
+- [ArrayUtils](#arrayutils)
+  - [union](#union)
+  - [diff](#diff)
+  - [sample](#sample)
+  - [intersect](#intersect)
+  - [zip](#zip)
+  - [shuffle](#shuffle)
+  - [chunk](#chunk)
+  - [random](#random)
+  - [compact](#compact)
+  - [unique](#unique)
+  - [range](#range)
+  - [flatten](#flatten)
+  - [partition](#partition)
 
 - [DateUtils](#dateutils)
   - [addDays](#adddays)
-  - [addMonths](#addmonths)
-  - [currentDate](#currentdate)
-  - [currentDay](#currentday)
   - [currentDayName](#currentdayname)
-  - [currentMonth](#currentmonth)
-  - [currentMonthName](#currentmonthname)
-  - [currentYear](#currentyear)
-  - [differenceInDays](#differenceindays)
-  - [differenceInWeeks](#differenceinweeks)
-  - [getWeekNumber](#getweeknumber)
   - [isBefore](#isbefore)
-  - [isLeapYear](#isleapyear)
-  - [isWeekend](#isweekend)
   - [subtractDays](#subtractdays)
+  - [differenceInWeeks](#differenceinweeks)
+  - [currentDate](#currentdate)
+  - [getWeekNumber](#getweeknumber)
+  - [isLeapYear](#isleapyear)
+  - [addMonths](#addmonths)
+  - [currentYear](#currentyear)
+  - [currentMonthName](#currentmonthname)
+  - [isWeekend](#isweekend)
+  - [differenceInDays](#differenceindays)
+  - [currentMonth](#currentmonth)
+  - [currentDay](#currentday)
 
 - [FunctionUtils](#functionutils)
-  - [compose](#compose)
-  - [curry](#curry)
-  - [debounce](#debounce)
-  - [memoize](#memoize)
-  - [retry](#retry)
   - [throttle](#throttle)
-
-- [MathUtils](#mathutils)
-  - [add](#add)
-  - [areaCircle](#areacircle)
-  - [areaRectangle](#arearectangle)
-  - [areaTriangle](#areatriangle)
-  - [average](#average)
-  - [ceil](#ceil)
-  - [circumference](#circumference)
-  - [divide](#divide)
-  - [factorial](#factorial)
-  - [floor](#floor)
-  - [gdc](#gdc)
-  - [isPrime](#isprime)
-  - [lcm](#lcm)
-  - [lerp](#lerp)
-  - [median](#median)
-  - [modulus](#modulus)
-  - [multiply](#multiply)
-  - [percentOf](#percentof)
-  - [pow](#pow)
-  - [randomInt](#randomint)
-  - [ratio](#ratio)
-  - [sqrt](#sqrt)
-  - [subtract](#subtract)
-  - [volumeSphere](#volumesphere)
-
-- [NumberUtils](#numberutils)
-  - [formatCurrency](#formatcurrency)
-  - [fromBinary](#frombinary)
-  - [fromHex](#fromhex)
-  - [fromOrdinal](#fromordinal)
-  - [fromRoman](#fromroman)
-  - [isEven](#iseven)
-  - [isOdd](#isodd)
-  - [padNumber](#padnumber)
-  - [randomNumber](#randomnumber)
-  - [toBinary](#tobinary)
-  - [toHex](#tohex)
-  - [toOrdinal](#toordinal)
-  - [toRoman](#toroman)
-
-- [ObjectUtils](#objectutils)
-  - [deepClone](#deepclone)
-  - [hasKey](#haskey)
-  - [keys](#keys)
-  - [mapKeys](#mapkeys)
-  - [merge](#merge)
-  - [omit](#omit)
-  - [pick](#pick)
-  - [values](#values)
+  - [debounce](#debounce)
+  - [curry](#curry)
+  - [retry](#retry)
+  - [compose](#compose)
+  - [memoize](#memoize)
 
 - [RegexUtils](#regexutils)
   - [isEmail](#isemail)
   - [matchAll](#matchall)
 
+- [MathUtils](#mathutils)
+  - [modulus](#modulus)
+  - [circumference](#circumference)
+  - [average](#average)
+  - [areaTriangle](#areatriangle)
+  - [factorial](#factorial)
+  - [median](#median)
+  - [percentOf](#percentof)
+  - [areaCircle](#areacircle)
+  - [randomInt](#randomint)
+  - [lcm](#lcm)
+  - [gdc](#gdc)
+  - [ceil](#ceil)
+  - [divide](#divide)
+  - [floor](#floor)
+  - [multiply](#multiply)
+  - [isPrime](#isprime)
+  - [sqrt](#sqrt)
+  - [subtract](#subtract)
+  - [add](#add)
+  - [lerp](#lerp)
+  - [volumeSphere](#volumesphere)
+  - [pow](#pow)
+  - [ratio](#ratio)
+  - [areaRectangle](#arearectangle)
+
+- [NumberUtils](#numberutils)
+  - [toRoman](#toroman)
+  - [padNumber](#padnumber)
+  - [toBinary](#tobinary)
+  - [toOrdinal](#toordinal)
+  - [fromRoman](#fromroman)
+  - [randomNumber](#randomnumber)
+  - [fromHex](#fromhex)
+  - [toHex](#tohex)
+  - [fromOrdinal](#fromordinal)
+  - [isOdd](#isodd)
+  - [isEven](#iseven)
+  - [formatCurrency](#formatcurrency)
+  - [fromBinary](#frombinary)
+
+- [ObjectUtils](#objectutils)
+  - [deepClone](#deepclone)
+  - [pick](#pick)
+  - [keys](#keys)
+  - [hasKey](#haskey)
+  - [mapKeys](#mapkeys)
+  - [values](#values)
+  - [merge](#merge)
+  - [omit](#omit)
+
 - [StringUtils](#stringutils)
-  - [camelCase](#camelcase)
   - [capitalize](#capitalize)
   - [countOccurrences](#countoccurrences)
+  - [camelCase](#camelcase)
+  - [snakeCase](#snakecase)
   - [isPalindrome](#ispalindrome)
   - [reverse](#reverse)
-  - [snakeCase](#snakecase)
   - [truncate](#truncate)
-
-
-## ArrayUtils
-
-the following utility functions are available in the `ArrayUtils` class, they can be used as a static method on the `ArrayUtils` class or as a standalone function.
-
-
-### chunk
-```typescript
-/**
- * Splits an array into smaller chunks of a specified size.
- *
- * @template T The type of elements in the array.
- * @param arr The array to be chunked.
- * @param size The size of each chunk. Default is 1.
- * @returns An array of chunks, where each chunk is an array of elements from the original array.
-*/
-```
-
-
-### compact
-```typescript
-/**
- * Removes null and undefined values from an array.
- * @param array - The array to compact.
- * @returns A new array with all null and undefined values removed.
- * @template T - The type of elements in the array.
-*/
-```
-
-
-### diff
-```typescript
-/**
- * Returns an array containing the elements from `arr1` that are not present in `arr2`.
- *
- * @template T - The type of elements in the arrays.
- * @param  arr1 - The first array.
- * @param  arr2 - The second array.
- * @returns  - The difference between `arr1` and `arr2`.
-*/
-```
-
-
-### flatten
-```typescript
-/**
- * Flattens a multi-dimensional array into a 1-dimensional array.
- *
- * @param arr The multi-dimensional array to flatten.
- * @returns A new 1-dimensional array containing all the elements from the original array.
- * @template T The type of elements in the array.
-*/
-```
-
-
-### intersect
-```typescript
-/**
- * Returns an array containing the elements that are present in both input arrays.
- *
- * @template T - The type of the elements in the arrays.
- * @param a - The first input array.
- * @param b - The second input array.
- * @returns An array containing the elements that are present in both input arrays.
-*/
-```
-
-
-### partition
-```typescript
-/**
- * Partitions an array into two separate arrays based on a given predicate function.
- *
- * @template T - The type of elements in the array.
- * @param  arr - The array to be partitioned.
- * @param  predicate - The predicate function used to determine the partition.
- * @returns  - An array containing two arrays: the first array contains elements that satisfy the predicate, and the second array contains elements that do not satisfy the predicate.
-*/
-```
-
-
-### random
-```typescript
-/**
- * Returns a random element from the given array.
- * @param arr The array from which to select a random element.
- * @returns A random element from the array.
-*/
-```
-
-
-### range
-```typescript
-/**
- * Returns a new array containing a portion of the original array.
- * @template T The type of elements in the array.
- * @param  arr The original array.
- * @param  [start=0] The starting index (inclusive) of the portion to extract. Defaults to 0.
- * @param  [end=arr.length] The ending index (exclusive) of the portion to extract. Defaults to the length of the array.
- * @returns  A new array containing the extracted portion of the original array.
-*/
-```
-
-
-### sample
-```typescript
-/**
- * Returns a random sample of elements from an array.
- * @param arr The array to sample from.
- * @param sampleSize The number of elements to include in the sample.
- * @returns An array containing a random sample of elements from the input array.
-*/
-```
-
-
-### shuffle
-```typescript
-/**
- * Shuffles the elements of an array in place.
- *
- * @param arr - The array to be shuffled.
- * @returns A new array with the elements shuffled.
- * @template T - The type of elements in the array.
-*/
-```
-
-
-### union
-```typescript
-/**
- * Returns a new array that contains unique elements from both input arrays.
- *
- * @template T - The type of elements in the arrays.
- * @param arr1 - The first input array.
- * @param arr2 - The second input array.
- * @returns A new array that contains unique elements from both input arrays.
-*/
-```
-
-
-### unique
-```typescript
-/**
- * Returns an array with unique elements from the input array.
- * @param arr The input array.
- * @returns An array with unique elements.
- * @template T The type of elements in the array.
-*/
-```
-
-
-### zip
-```typescript
-/**
- * Zips two arrays together, creating an array of tuples where each tuple contains
- * corresponding elements from both input arrays.
- *
- * @template T - The type of elements in the arrays.
- * @param  arr1 - The first input array.
- * @param  arr2 - The second input array.
- * @returns  - An array of tuples containing corresponding elements from both input arrays.
-*/
-```
-
 
 
 ## BenchmarkUtils
 
 the following utility functions are available in the `BenchmarkUtils` class, they can be used as a static method on the `BenchmarkUtils` class or as a standalone function.
-
-
-### benchmark
-```typescript
-/**
- * Measures the execution time of a function.
- * @param fn - The function to be benchmarked.
- * @param args - The arguments to be passed to the function.
- * @returns The execution time in milliseconds.
-*/
-```
 
 
 ### benchmarkAsync
@@ -320,6 +144,182 @@ the following utility functions are available in the `BenchmarkUtils` class, the
 ```
 
 
+### benchmark
+```typescript
+/**
+ * Measures the execution time of a function.
+ * @param fn - The function to be benchmarked.
+ * @param args - The arguments to be passed to the function.
+ * @returns The execution time in milliseconds.
+*/
+```
+
+
+
+## ArrayUtils
+
+the following utility functions are available in the `ArrayUtils` class, they can be used as a static method on the `ArrayUtils` class or as a standalone function.
+
+
+### union
+```typescript
+/**
+ * Returns a new array that contains unique elements from both input arrays.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param arr1 - The first input array.
+ * @param arr2 - The second input array.
+ * @returns A new array that contains unique elements from both input arrays.
+*/
+```
+
+
+### diff
+```typescript
+/**
+ * Returns an array containing the elements from `arr1` that are not present in `arr2`.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param  arr1 - The first array.
+ * @param  arr2 - The second array.
+ * @returns  - The difference between `arr1` and `arr2`.
+*/
+```
+
+
+### sample
+```typescript
+/**
+ * Returns a random sample of elements from an array.
+ * @param arr The array to sample from.
+ * @param sampleSize The number of elements to include in the sample.
+ * @returns An array containing a random sample of elements from the input array.
+*/
+```
+
+
+### intersect
+```typescript
+/**
+ * Returns an array containing the elements that are present in both input arrays.
+ *
+ * @template T - The type of the elements in the arrays.
+ * @param a - The first input array.
+ * @param b - The second input array.
+ * @returns An array containing the elements that are present in both input arrays.
+*/
+```
+
+
+### zip
+```typescript
+/**
+ * Zips two arrays together, creating an array of tuples where each tuple contains
+ * corresponding elements from both input arrays.
+ *
+ * @template T - The type of elements in the arrays.
+ * @param  arr1 - The first input array.
+ * @param  arr2 - The second input array.
+ * @returns  - An array of tuples containing corresponding elements from both input arrays.
+*/
+```
+
+
+### shuffle
+```typescript
+/**
+ * Shuffles the elements of an array in place.
+ *
+ * @param arr - The array to be shuffled.
+ * @returns A new array with the elements shuffled.
+ * @template T - The type of elements in the array.
+*/
+```
+
+
+### chunk
+```typescript
+/**
+ * Splits an array into smaller chunks of a specified size.
+ *
+ * @template T The type of elements in the array.
+ * @param arr The array to be chunked.
+ * @param size The size of each chunk. Default is 1.
+ * @returns An array of chunks, where each chunk is an array of elements from the original array.
+*/
+```
+
+
+### random
+```typescript
+/**
+ * Returns a random element from the given array.
+ * @param arr The array from which to select a random element.
+ * @returns A random element from the array.
+*/
+```
+
+
+### compact
+```typescript
+/**
+ * Removes null and undefined values from an array.
+ * @param array - The array to compact.
+ * @returns A new array with all null and undefined values removed.
+ * @template T - The type of elements in the array.
+*/
+```
+
+
+### unique
+```typescript
+/**
+ * Returns an array with unique elements from the input array.
+ * @param arr The input array.
+ * @returns An array with unique elements.
+ * @template T The type of elements in the array.
+*/
+```
+
+
+### range
+```typescript
+/**
+ * Returns a new array containing a portion of the original array.
+ * @template T The type of elements in the array.
+ * @param  arr The original array.
+ * @param  [start=0] The starting index (inclusive) of the portion to extract. Defaults to 0.
+ * @param  [end=arr.length] The ending index (exclusive) of the portion to extract. Defaults to the length of the array.
+ * @returns  A new array containing the extracted portion of the original array.
+*/
+```
+
+
+### flatten
+```typescript
+/**
+ * Flattens a multi-dimensional array into a 1-dimensional array.
+ *
+ * @param arr The multi-dimensional array to flatten.
+ * @returns A new 1-dimensional array containing all the elements from the original array.
+ * @template T The type of elements in the array.
+*/
+```
+
+
+### partition
+```typescript
+/**
+ * Partitions an array into two separate arrays based on a given predicate function.
+ *
+ * @template T - The type of elements in the array.
+ * @param  arr - The array to be partitioned.
+ * @param  predicate - The predicate function used to determine the partition.
+ * @returns  - An array containing two arrays: the first array contains elements that satisfy the predicate, and the second array contains elements that do not satisfy the predicate.
+*/
+```
+
+
 
 ## DateUtils
 
@@ -337,102 +337,11 @@ the following utility functions are available in the `DateUtils` class, they can
 ```
 
 
-### addMonths
-```typescript
-/**
- * Adds the specified number of months to a given date.
- *
- * @param  date - The date to which the months should be added.
- * @param  months - The number of months to add.
- * @returns  - The new date after adding the specified number of months.
-*/
-```
-
-
-### currentDate
-```typescript
-/**
- * Returns the current date and time.
- * @returns  The current date and time.
-*/
-```
-
-
-### currentDay
-```typescript
-/**
- * Returns the current day of the month.
- * @returns  The current day of the month.
-*/
-```
-
-
 ### currentDayName
 ```typescript
 /**
  * Returns the name of the current day of the week.
  * @returns  The name of the current day of the week.
-*/
-```
-
-
-### currentMonth
-```typescript
-/**
- * Returns the current month as a number.
- * @returns  The current month as a number (1-12).
-*/
-```
-
-
-### currentMonthName
-```typescript
-/**
- * Returns the name of the current month.
- * @returns  The name of the current month.
-*/
-```
-
-
-### currentYear
-```typescript
-/**
- * Returns the current year as a number.
- * @returns  The current year.
-*/
-```
-
-
-### differenceInDays
-```typescript
-/**
- * Calculates the difference in days between two dates.
- * @param dateLeft The first date.
- * @param dateRight The second date.
- * @returns The difference in days between the two dates.
-*/
-```
-
-
-### differenceInWeeks
-```typescript
-/**
- * Calculates the difference in weeks between two dates.
- *
- * @param dateLeft - The first date.
- * @param dateRight - The second date.
- * @returns The difference in weeks between the two dates.
-*/
-```
-
-
-### getWeekNumber
-```typescript
-/**
- * Calculates the week number of a given date.
- *
- * @param date - The date for which to calculate the week number.
- * @returns The week number of the given date.
 */
 ```
 
@@ -449,12 +358,86 @@ the following utility functions are available in the `DateUtils` class, they can
 ```
 
 
+### subtractDays
+```typescript
+/**
+ * Subtracts the specified number of days from a given date.
+ *
+ * @param date - The date to subtract days from.
+ * @param days - The number of days to subtract.
+ * @returns A new Date object representing the result of the subtraction.
+*/
+```
+
+
+### differenceInWeeks
+```typescript
+/**
+ * Calculates the difference in weeks between two dates.
+ *
+ * @param dateLeft - The first date.
+ * @param dateRight - The second date.
+ * @returns The difference in weeks between the two dates.
+*/
+```
+
+
+### currentDate
+```typescript
+/**
+ * Returns the current date and time.
+ * @returns  The current date and time.
+*/
+```
+
+
+### getWeekNumber
+```typescript
+/**
+ * Calculates the week number of a given date.
+ *
+ * @param date - The date for which to calculate the week number.
+ * @returns The week number of the given date.
+*/
+```
+
+
 ### isLeapYear
 ```typescript
 /**
  * Checks if a given year is a leap year.
  * @param date - The date object representing the year.
  * @returns A boolean value indicating whether the year is a leap year.
+*/
+```
+
+
+### addMonths
+```typescript
+/**
+ * Adds the specified number of months to a given date.
+ *
+ * @param  date - The date to which the months should be added.
+ * @param  months - The number of months to add.
+ * @returns  - The new date after adding the specified number of months.
+*/
+```
+
+
+### currentYear
+```typescript
+/**
+ * Returns the current year as a number.
+ * @returns  The current year.
+*/
+```
+
+
+### currentMonthName
+```typescript
+/**
+ * Returns the name of the current month.
+ * @returns  The name of the current month.
 */
 ```
 
@@ -469,14 +452,31 @@ the following utility functions are available in the `DateUtils` class, they can
 ```
 
 
-### subtractDays
+### differenceInDays
 ```typescript
 /**
- * Subtracts the specified number of days from a given date.
- *
- * @param date - The date to subtract days from.
- * @param days - The number of days to subtract.
- * @returns A new Date object representing the result of the subtraction.
+ * Calculates the difference in days between two dates.
+ * @param dateLeft The first date.
+ * @param dateRight The second date.
+ * @returns The difference in days between the two dates.
+*/
+```
+
+
+### currentMonth
+```typescript
+/**
+ * Returns the current month as a number.
+ * @returns  The current month as a number (1-12).
+*/
+```
+
+
+### currentDay
+```typescript
+/**
+ * Returns the current day of the month.
+ * @returns  The current day of the month.
 */
 ```
 
@@ -487,24 +487,16 @@ the following utility functions are available in the `DateUtils` class, they can
 the following utility functions are available in the `FunctionUtils` class, they can be used as a static method on the `FunctionUtils` class or as a standalone function.
 
 
-### compose
+### throttle
 ```typescript
 /**
- * Composes multiple functions into a single function.
+ * Creates a throttled version of the given function.
+ * The throttled function will only be invoked at most once within the specified time limit.
  *
- * @template T - The type of the argument and return value.
- * @param  fns - The functions to compose.
- * @returns  - The composed function.
-*/
-```
-
-
-### curry
-```typescript
-/**
- * Curries a function, allowing partial application of arguments.
- * @param fn - The function to curry.
- * @returns A curried function that can be called with partial arguments.
+ * @template T - The type of the original function.
+ * @param  func - The original function to be throttled.
+ * @param  limit - The time limit in milliseconds.
+ * @returns  - The throttled function.
 */
 ```
 
@@ -523,12 +515,12 @@ the following utility functions are available in the `FunctionUtils` class, they
 ```
 
 
-### memoize
+### curry
 ```typescript
 /**
- * Memoizes a function by caching its results based on the arguments.
- * @param fn The function to memoize.
- * @returns The memoized function.
+ * Curries a function, allowing partial application of arguments.
+ * @param fn - The function to curry.
+ * @returns A curried function that can be called with partial arguments.
 */
 ```
 
@@ -544,547 +536,24 @@ the following utility functions are available in the `FunctionUtils` class, they
 ```
 
 
-### throttle
+### compose
 ```typescript
 /**
- * Creates a throttled version of the given function.
- * The throttled function will only be invoked at most once within the specified time limit.
+ * Composes multiple functions into a single function.
  *
- * @template T - The type of the original function.
- * @param  func - The original function to be throttled.
- * @param  limit - The time limit in milliseconds.
- * @returns  - The throttled function.
+ * @template T - The type of the argument and return value.
+ * @param  fns - The functions to compose.
+ * @returns  - The composed function.
 */
 ```
 
 
-
-## MathUtils
-
-the following utility functions are available in the `MathUtils` class, they can be used as a static method on the `MathUtils` class or as a standalone function.
-
-
-### add
+### memoize
 ```typescript
 /**
- * Adds two numbers together.
- * @param a - The first number to add.
- * @param b - The second number to add.
- * @returns The sum of the two numbers.
-*/
-```
-
-
-### areaCircle
-```typescript
-/**
- * Calculates the area of a circle.
- * @param radius - The radius of the circle.
- * @returns The area of the circle.
-*/
-```
-
-
-### areaRectangle
-```typescript
-/**
- * Calculates the area of a rectangle.
- *
- * @param length - The length of the rectangle.
- * @param width - The width of the rectangle.
- * @returns The area of the rectangle.
-*/
-```
-
-
-### areaTriangle
-```typescript
-/**
- * Calculates the area of a triangle.
- *
- * @param base - The length of the base of the triangle.
- * @param height - The height of the triangle.
- * @returns The area of the triangle.
-*/
-```
-
-
-### average
-```typescript
-/**
- * Calculates the average of an array of numbers.
- * @param arr - The array of numbers.
- * @returns The average value.
-*/
-```
-
-
-### ceil
-```typescript
-/**
- * Returns the smallest integer greater than or equal to a given number, rounded to a specified precision.
- * @param number - The number to round up.
- * @param precision - The number of decimal places to round up to. Defaults to 0.
- * @returns The rounded up number.
-*/
-```
-
-
-### circumference
-```typescript
-/**
- * Calculates the circumference of a circle given the radius.
- * @param radius - The radius of the circle.
- * @returns The circumference of the circle.
-*/
-```
-
-
-### divide
-```typescript
-/**
- * Divides two numbers.
- * @param a The dividend.
- * @param b The divisor.
- * @returns The quotient of the two numbers.
-*/
-```
-
-
-### factorial
-```typescript
-/**
- * Calculates the factorial of a given number.
- * @param n - The number to calculate the factorial for.
- * @returns The factorial of the given number.
- * @throws  If the given number is negative.
-*/
-```
-
-
-### floor
-```typescript
-/**
- * Returns the largest integer less than or equal to a given number, with optional precision.
- *
- * @param number - The number to round down.
- * @param precision - The number of decimal places to preserve. Defaults to 0.
- * @returns The rounded down number.
- *
- * @example
- * ```
- * floor(4.9); // 4
- * floor(4.12345, 3); // 4.123
- * ```
-*/
-```
-
-
-### gdc
-```typescript
-/**
- * Calculates the greatest common divisor (GCD) of two numbers.
- *
- * @param a - The first number.
- * @param b - The second number.
- * @returns The greatest common divisor of `a` and `b`.
-*/
-```
-
-
-### isPrime
-```typescript
-/**
- * Checks if a number is prime.
- * @param a - The number to check.
- * @returns True if the number is prime, false otherwise.
-*/
-```
-
-
-### lcm
-```typescript
-/**
- * Calculates the least common multiple (LCM) of two numbers.
- *
- * @param a - The first number.
- * @param b - The second number.
- * @returns The least common multiple of `a` and `b`.
-*/
-```
-
-
-### lerp
-```typescript
-/**
- * Linearly interpolates between two numbers.
- * @param from - The starting value.
- * @param to - The ending value.
- * @param t - The interpolation factor (between 0 and 1).
- * @returns The interpolated value.
-*/
-```
-
-
-### median
-```typescript
-/**
- * Calculates the median value of an array of numbers.
- *
- * @param arr - The array of numbers.
- * @returns The median value.
-*/
-```
-
-
-### modulus
-```typescript
-/**
- * Calculates the modulus of two numbers.
- *
- * @param a - The dividend.
- * @param b - The divisor.
- * @returns The remainder after dividing `a` by `b`.
-*/
-```
-
-
-### multiply
-```typescript
-/**
- * Multiplies two numbers.
- * @param a The first number to multiply.
- * @param b The second number to multiply.
- * @returns The product of the two numbers.
-*/
-```
-
-
-### percentOf
-```typescript
-/**
- * Calculates the percentage of a number in relation to another number.
- *
- * @param a - The number to calculate the percentage of.
- * @param b - The total number to calculate the percentage against.
- * @returns The calculated percentage.
-*/
-```
-
-
-### pow
-```typescript
-/**
- * Calculates the power of a number.
- * @param a - The base number.
- * @param b - The exponent.
- * @returns The result of raising `a` to the power of `b`.
-*/
-```
-
-
-### randomInt
-```typescript
-/**
- * Generates a random integer between the specified minimum and maximum values (inclusive).
- *
- * @param min - The minimum value of the range.
- * @param max - The maximum value of the range.
- * @returns A random integer between the minimum and maximum values.
-*/
-```
-
-
-### ratio
-```typescript
-/**
- * Calculates the ratio between two numbers.
- *
- * @param a - The numerator.
- * @param b - The denominator.
- * @returns The ratio of a to b.
-*/
-```
-
-
-### sqrt
-```typescript
-/**
- * Calculates the square root of a number.
- * @param a - The number to calculate the square root of.
- * @returns The square root of the input number.
-*/
-```
-
-
-### subtract
-```typescript
-/**
- * Subtracts two numbers.
- *
- * @param a The first number.
- * @param b The second number.
- * @returns The result of subtracting `b` from `a`.
-*/
-```
-
-
-### volumeSphere
-```typescript
-/**
- * Calculates the volume of a sphere given its radius.
- * @param radius The radius of the sphere.
- * @returns The volume of the sphere.
-*/
-```
-
-
-
-## NumberUtils
-
-the following utility functions are available in the `NumberUtils` class, they can be used as a static method on the `NumberUtils` class or as a standalone function.
-
-
-### formatCurrency
-```typescript
-/**
- * Formats a number as currency.
- *
- * @param num - The number to format.
- * @param currency - The currency symbol to use (default: "$").
- * @returns The formatted currency string.
-*/
-```
-
-
-### fromBinary
-```typescript
-/**
- * Converts a binary string to a number.
- *
- * @param binaryString The binary string to convert.
- * @returns The converted number.
-*/
-```
-
-
-### fromHex
-```typescript
-/**
- * Converts a hexadecimal string to a number.
- *
- * @param hexString - The hexadecimal string to convert.
- * @returns The converted number.
-*/
-```
-
-
-### fromOrdinal
-```typescript
-/**
- * Converts a string representing an ordinal number to its corresponding numeric value.
- *
- * @param n - The string representing the ordinal number. (e.g. "1st", "2nd", "3rd", "4th", etc.)
- * @returns The numeric value of the ordinal number.
-*/
-```
-
-
-### fromRoman
-```typescript
-/**
- * Converts a Roman numeral string to a number.
- *
- * @param str - The Roman numeral string to convert.
- * @returns The converted number.
-*/
-```
-
-
-### isEven
-```typescript
-/**
- * Checks if a number is even.
- * @param n - The number to check.
- * @returns True if the number is even, false otherwise.
-*/
-```
-
-
-### isOdd
-```typescript
-/**
- * Checks if a number is odd.
- * @param n - The number to check.
- * @returns True if the number is odd, false otherwise.
-*/
-```
-
-
-### padNumber
-```typescript
-/**
- * Pads a number with leading zeros to a specified length.
- *
- * @param num - The number to pad.
- * @param length - The desired length of the padded number.
- * @returns The padded number as a string.
-*/
-```
-
-
-### randomNumber
-```typescript
-/**
- * Generates a random number between the specified minimum and maximum values (inclusive).
- * @param min The minimum value of the range.
- * @param max The maximum value of the range.
- * @returns A random number between the minimum and maximum values.
-*/
-```
-
-
-### toBinary
-```typescript
-/**
- * Converts a number to its binary representation.
- * @param value - The number to convert.
- * @returns The binary representation of the number.
-*/
-```
-
-
-### toHex
-```typescript
-/**
- * Converts a number to its hexadecimal representation.
- * @param value - The number to convert.
- * @returns The hexadecimal representation of the number.
-*/
-```
-
-
-### toOrdinal
-```typescript
-/**
- * Converts a number to its ordinal representation.
- *
- * @param num - The number to convert.
- * @returns The ordinal representation of the number.
-*/
-```
-
-
-### toRoman
-```typescript
-/**
- * Converts a number to its Roman numeral representation.
- * @param num - The number to be converted to Roman numeral.
- * @returns A string representing the Roman numeral.
-*/
-```
-
-
-
-## ObjectUtils
-
-the following utility functions are available in the `ObjectUtils` class, they can be used as a static method on the `ObjectUtils` class or as a standalone function.
-
-
-### deepClone
-```typescript
-/**
- * Creates a deep clone of an object.
- *
- * @param obj - The object to be cloned.
- * @returns A deep clone of the object.
-*/
-```
-
-
-### hasKey
-```typescript
-/**
- * Checks if an object has a specific key.
- *
- * @param obj - The object to check.
- * @param key - The key to check for.
- * @returns A boolean indicating whether the object has the specified key.
-*/
-```
-
-
-### keys
-```typescript
-/**
- * Returns an array of keys from the given object.
- *
- * @template T - The type of the object.
- * @param obj - The object to retrieve keys from.
- * @returns An array of keys from the object.
-*/
-```
-
-
-### mapKeys
-```typescript
-/**
- * Maps the keys of an object using a provided function.
- *
- * @param obj - The object whose keys will be mapped.
- * @param fn - The function to apply to each key-value pair. It takes the key and value as arguments and returns the new key.
- * @returns A new object with the mapped keys.
-*/
-```
-
-
-### merge
-```typescript
-/**
- * Merges two objects together.
- * @template T - The type of the first object.
- * @template U - The type of the second object.
- * @param  obj1 - The first object to merge.
- * @param  obj2 - The second object to merge.
- * @returns  - The merged object.
-*/
-```
-
-
-### omit
-```typescript
-/**
- * Creates a new object with the specified keys omitted.
- *
- * @param obj - The object from which to omit keys.
- * @param keys - An array of keys to omit from the object.
- * @returns A new object with the specified keys omitted.
-*/
-```
-
-
-### pick
-```typescript
-/**
- * Creates a new object with only the specified keys from the original object.
- *
- * @template T - The type of the original object.
- * @template K - The type of the keys to pick from the original object.
- * @param obj - The original object.
- * @param keys - An array of keys to pick from the original object.
- * @returns A new object with only the specified keys from the original object.
-*/
-```
-
-
-### values
-```typescript
-/**
- * Returns an array of the values of an object.
- *
- * @template T - The type of the object.
- * @param obj - The object to extract values from.
- * @returns An array containing the values of the object.
+ * Memoizes a function by caching its results based on the arguments.
+ * @param fn The function to memoize.
+ * @returns The memoized function.
 */
 ```
 
@@ -1119,20 +588,540 @@ the following utility functions are available in the `RegexUtils` class, they ca
 
 
 
+## MathUtils
+
+the following utility functions are available in the `MathUtils` class, they can be used as a static method on the `MathUtils` class or as a standalone function.
+
+
+### modulus
+```typescript
+/**
+ * Calculates the modulus of two numbers.
+ *
+ * @param a - The dividend.
+ * @param b - The divisor.
+ * @returns The remainder after dividing `a` by `b`.
+*/
+```
+
+
+### circumference
+```typescript
+/**
+ * Calculates the circumference of a circle given the radius.
+ * @param radius - The radius of the circle.
+ * @returns The circumference of the circle.
+*/
+```
+
+
+### average
+```typescript
+/**
+ * Calculates the average of an array of numbers.
+ * @param arr - The array of numbers.
+ * @returns The average value.
+*/
+```
+
+
+### areaTriangle
+```typescript
+/**
+ * Calculates the area of a triangle.
+ *
+ * @param base - The length of the base of the triangle.
+ * @param height - The height of the triangle.
+ * @returns The area of the triangle.
+*/
+```
+
+
+### factorial
+```typescript
+/**
+ * Calculates the factorial of a given number.
+ * @param n - The number to calculate the factorial for.
+ * @returns The factorial of the given number.
+ * @throws  If the given number is negative.
+*/
+```
+
+
+### median
+```typescript
+/**
+ * Calculates the median value of an array of numbers.
+ *
+ * @param arr - The array of numbers.
+ * @returns The median value.
+*/
+```
+
+
+### percentOf
+```typescript
+/**
+ * Calculates the percentage of a number in relation to another number.
+ *
+ * @param a - The number to calculate the percentage of.
+ * @param b - The total number to calculate the percentage against.
+ * @returns The calculated percentage.
+*/
+```
+
+
+### areaCircle
+```typescript
+/**
+ * Calculates the area of a circle.
+ * @param radius - The radius of the circle.
+ * @returns The area of the circle.
+*/
+```
+
+
+### randomInt
+```typescript
+/**
+ * Generates a random integer between the specified minimum and maximum values (inclusive).
+ *
+ * @param min - The minimum value of the range.
+ * @param max - The maximum value of the range.
+ * @returns A random integer between the minimum and maximum values.
+*/
+```
+
+
+### lcm
+```typescript
+/**
+ * Calculates the least common multiple (LCM) of two numbers.
+ *
+ * @param a - The first number.
+ * @param b - The second number.
+ * @returns The least common multiple of `a` and `b`.
+*/
+```
+
+
+### gdc
+```typescript
+/**
+ * Calculates the greatest common divisor (GCD) of two numbers.
+ *
+ * @param a - The first number.
+ * @param b - The second number.
+ * @returns The greatest common divisor of `a` and `b`.
+*/
+```
+
+
+### ceil
+```typescript
+/**
+ * Returns the smallest integer greater than or equal to a given number, rounded to a specified precision.
+ * @param number - The number to round up.
+ * @param precision - The number of decimal places to round up to. Defaults to 0.
+ * @returns The rounded up number.
+*/
+```
+
+
+### divide
+```typescript
+/**
+ * Divides two numbers.
+ * @param a The dividend.
+ * @param b The divisor.
+ * @returns The quotient of the two numbers.
+*/
+```
+
+
+### floor
+```typescript
+/**
+ * Returns the largest integer less than or equal to a given number, with optional precision.
+ *
+ * @param number - The number to round down.
+ * @param precision - The number of decimal places to preserve. Defaults to 0.
+ * @returns The rounded down number.
+ *
+ * @example
+ * ```
+ * floor(4.9); // 4
+ * floor(4.12345, 3); // 4.123
+ * ```
+*/
+```
+
+
+### multiply
+```typescript
+/**
+ * Multiplies two numbers.
+ * @param a The first number to multiply.
+ * @param b The second number to multiply.
+ * @returns The product of the two numbers.
+*/
+```
+
+
+### isPrime
+```typescript
+/**
+ * Checks if a number is prime.
+ * @param a - The number to check.
+ * @returns True if the number is prime, false otherwise.
+*/
+```
+
+
+### sqrt
+```typescript
+/**
+ * Calculates the square root of a number.
+ * @param a - The number to calculate the square root of.
+ * @returns The square root of the input number.
+*/
+```
+
+
+### subtract
+```typescript
+/**
+ * Subtracts two numbers.
+ *
+ * @param a The first number.
+ * @param b The second number.
+ * @returns The result of subtracting `b` from `a`.
+*/
+```
+
+
+### add
+```typescript
+/**
+ * Adds two numbers together.
+ * @param a - The first number to add.
+ * @param b - The second number to add.
+ * @returns The sum of the two numbers.
+*/
+```
+
+
+### lerp
+```typescript
+/**
+ * Linearly interpolates between two numbers.
+ * @param from - The starting value.
+ * @param to - The ending value.
+ * @param t - The interpolation factor (between 0 and 1).
+ * @returns The interpolated value.
+*/
+```
+
+
+### volumeSphere
+```typescript
+/**
+ * Calculates the volume of a sphere given its radius.
+ * @param radius The radius of the sphere.
+ * @returns The volume of the sphere.
+*/
+```
+
+
+### pow
+```typescript
+/**
+ * Calculates the power of a number.
+ * @param a - The base number.
+ * @param b - The exponent.
+ * @returns The result of raising `a` to the power of `b`.
+*/
+```
+
+
+### ratio
+```typescript
+/**
+ * Calculates the ratio between two numbers.
+ *
+ * @param a - The numerator.
+ * @param b - The denominator.
+ * @returns The ratio of a to b.
+*/
+```
+
+
+### areaRectangle
+```typescript
+/**
+ * Calculates the area of a rectangle.
+ *
+ * @param length - The length of the rectangle.
+ * @param width - The width of the rectangle.
+ * @returns The area of the rectangle.
+*/
+```
+
+
+
+## NumberUtils
+
+the following utility functions are available in the `NumberUtils` class, they can be used as a static method on the `NumberUtils` class or as a standalone function.
+
+
+### toRoman
+```typescript
+/**
+ * Converts a number to its Roman numeral representation.
+ * @param input - The number to be converted to Roman numeral.
+ * @returns A string representing the Roman numeral.
+*/
+```
+
+
+### padNumber
+```typescript
+/**
+ * Pads a number with leading zeros to a specified length.
+ *
+ * @param num - The number to pad.
+ * @param length - The desired length of the padded number.
+ * @returns The padded number as a string.
+*/
+```
+
+
+### toBinary
+```typescript
+/**
+ * Converts a number to its binary representation.
+ * @param value - The number to convert.
+ * @returns The binary representation of the number.
+*/
+```
+
+
+### toOrdinal
+```typescript
+/**
+ * Converts a number to its ordinal representation.
+ *
+ * @param num - The number to convert.
+ * @returns The ordinal representation of the number.
+*/
+```
+
+
+### fromRoman
+```typescript
+/**
+ * Converts a Roman numeral string to a number.
+ *
+ * @param input - The Roman numeral string to convert.
+ * @returns The converted number.
+*/
+```
+
+
+### randomNumber
+```typescript
+/**
+ * Generates a random number between the specified minimum and maximum values (inclusive).
+ * @param min The minimum value of the range.
+ * @param max The maximum value of the range.
+ * @returns A random number between the minimum and maximum values.
+*/
+```
+
+
+### fromHex
+```typescript
+/**
+ * Converts a hexadecimal string to a number.
+ *
+ * @param hexString - The hexadecimal string to convert.
+ * @returns The converted number.
+*/
+```
+
+
+### toHex
+```typescript
+/**
+ * Converts a number to its hexadecimal representation.
+ * @param value - The number to convert.
+ * @returns The hexadecimal representation of the number.
+*/
+```
+
+
+### fromOrdinal
+```typescript
+/**
+ * Converts a string representing an ordinal number to its corresponding numeric value.
+ *
+ * @param n - The string representing the ordinal number. (e.g. "1st", "2nd", "3rd", "4th", etc.)
+ * @returns The numeric value of the ordinal number.
+*/
+```
+
+
+### isOdd
+```typescript
+/**
+ * Checks if a number is odd.
+ * @param n - The number to check.
+ * @returns True if the number is odd, false otherwise.
+*/
+```
+
+
+### isEven
+```typescript
+/**
+ * Checks if a number is even.
+ * @param n - The number to check.
+ * @returns True if the number is even, false otherwise.
+*/
+```
+
+
+### formatCurrency
+```typescript
+/**
+ * Formats a number as currency.
+ *
+ * @param num - The number to format.
+ * @param currency - The currency symbol to use (default: "$").
+ * @returns The formatted currency string.
+*/
+```
+
+
+### fromBinary
+```typescript
+/**
+ * Converts a binary string to a number.
+ *
+ * @param binaryString The binary string to convert.
+ * @returns The converted number.
+*/
+```
+
+
+
+## ObjectUtils
+
+the following utility functions are available in the `ObjectUtils` class, they can be used as a static method on the `ObjectUtils` class or as a standalone function.
+
+
+### deepClone
+```typescript
+/**
+ * Creates a deep clone of an object.
+ *
+ * @param obj - The object to be cloned.
+ * @returns A deep clone of the object.
+*/
+```
+
+
+### pick
+```typescript
+/**
+ * Creates a new object with only the specified keys from the original object.
+ *
+ * @template T - The type of the original object.
+ * @template K - The type of the keys to pick from the original object.
+ * @param obj - The original object.
+ * @param keys - An array of keys to pick from the original object.
+ * @returns A new object with only the specified keys from the original object.
+*/
+```
+
+
+### keys
+```typescript
+/**
+ * Returns an array of keys from the given object.
+ *
+ * @template T - The type of the object.
+ * @param obj - The object to retrieve keys from.
+ * @returns An array of keys from the object.
+*/
+```
+
+
+### hasKey
+```typescript
+/**
+ * Checks if an object has a specific key.
+ *
+ * @param obj - The object to check.
+ * @param key - The key to check for.
+ * @returns A boolean indicating whether the object has the specified key.
+*/
+```
+
+
+### mapKeys
+```typescript
+/**
+ * Maps the keys of an object using a provided function.
+ *
+ * @param obj - The object whose keys will be mapped.
+ * @param fn - The function to apply to each key-value pair. It takes the key and value as arguments and returns the new key.
+ * @returns A new object with the mapped keys.
+*/
+```
+
+
+### values
+```typescript
+/**
+ * Returns an array of the values of an object.
+ *
+ * @template T - The type of the object.
+ * @param obj - The object to extract values from.
+ * @returns An array containing the values of the object.
+*/
+```
+
+
+### merge
+```typescript
+/**
+ * Merges two objects together.
+ * @template T - The type of the first object.
+ * @template U - The type of the second object.
+ * @param  obj1 - The first object to merge.
+ * @param  obj2 - The second object to merge.
+ * @returns  - The merged object.
+*/
+```
+
+
+### omit
+```typescript
+/**
+ * Creates a new object with the specified keys omitted.
+ *
+ * @param obj - The object from which to omit keys.
+ * @param keys - An array of keys to omit from the object.
+ * @returns A new object with the specified keys omitted.
+*/
+```
+
+
+
 ## StringUtils
 
 the following utility functions are available in the `StringUtils` class, they can be used as a static method on the `StringUtils` class or as a standalone function.
-
-
-### camelCase
-```typescript
-/**
- * Converts a string to camelCase.
- *
- * @param  str - The input string to convert.
- * @returns  The camelCase version of the input string.
-*/
-```
 
 
 ### capitalize
@@ -1157,6 +1146,30 @@ the following utility functions are available in the `StringUtils` class, they c
 ```
 
 
+### camelCase
+```typescript
+/**
+ * Converts a string to camelCase.
+ *
+ * @param  str - The input string to convert.
+ * @returns  The camelCase version of the input string.
+*/
+```
+
+
+### snakeCase
+```typescript
+/**
+ * Converts a string to snake case.
+ * Snake case is a naming convention where each space or non-alphanumeric character is replaced with an underscore,
+ * and each uppercase letter is preceded by an underscore and converted to lowercase.
+ *
+ * @param str - The string to convert to snake case.
+ * @returns The snake case representation of the input string.
+*/
+```
+
+
 ### isPalindrome
 ```typescript
 /**
@@ -1174,19 +1187,6 @@ the following utility functions are available in the `StringUtils` class, they c
  *
  * @param str - The string to be reversed.
  * @returns The reversed string.
-*/
-```
-
-
-### snakeCase
-```typescript
-/**
- * Converts a string to snake case.
- * Snake case is a naming convention where each space or non-alphanumeric character is replaced with an underscore,
- * and each uppercase letter is preceded by an underscore and converted to lowercase.
- *
- * @param str - The string to convert to snake case.
- * @returns The snake case representation of the input string.
 */
 ```
 

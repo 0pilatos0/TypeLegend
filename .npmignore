@@ -6,3 +6,4 @@ test/
 tsconfig.json
 bun.lockb
 USAGE.md
+biome.json

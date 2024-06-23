@@ -1,6 +1,6 @@
 {
   "name": "typelegend",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -31,9 +31,10 @@
   },
   "homepage": "https://github.com/0pilatos0/TypeLegend#readme",
   "devDependencies": {
+    "@biomejs/biome": "1.8.2",
     "bun-types": "latest",
-    "typescript": "^5.4.2",
-    "tsup": "^8.0.2"
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

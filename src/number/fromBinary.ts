@@ -5,5 +5,5 @@
  * @returns The converted number.
  */
 export function fromBinary(binaryString: string): number {
-  return parseInt(binaryString, 2);
+	return Number.parseInt(binaryString, 2);
 }

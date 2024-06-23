@@ -5,10 +5,10 @@
  * @returns A promise that resolves with the result of the function if it succeeds, or rejects with the last error if it fails after all retries.
  */
 export function retry<T>(fn: () => Promise<T>, retries: number): Promise<T> {
-  return fn().catch((error) => {
-    if (retries > 0) {
-      return retry(fn, retries - 1);
-    }
-    throw error;
-  });
+	return fn().catch((error) => {
+		if (retries > 0) {
+			return retry(fn, retries - 1);
+		}
+		throw error;
+	});
 }

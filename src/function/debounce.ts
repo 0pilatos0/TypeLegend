@@ -8,17 +8,17 @@
  * @returns {(...args: Parameters<T>) => void} - The debounced function.
  */
 export function debounce<T extends (...args: any[]) => any>(
-  func: T,
-  waitFor: number
+	func: T,
+	waitFor: number,
 ): (...args: Parameters<T>) => void {
-  let timeout: Timer | null = null;
+	let timeout: Timer | null = null;
 
-  return function (...args: Parameters<T>): void {
-    if (timeout !== null) {
-      clearTimeout(timeout);
-    }
-    timeout = setTimeout(() => {
-      func(...args);
-    }, waitFor);
-  };
+	return (...args: Parameters<T>): void => {
+		if (timeout !== null) {
+			clearTimeout(timeout);
+		}
+		timeout = setTimeout(() => {
+			func(...args);
+		}, waitFor);
+	};
 }

@@ -3,5 +3,5 @@
  * @returns {Date} The current date and time.
  */
 export function currentDate(): Date {
-  return new Date();
+	return new Date();
 }

@@ -4,5 +4,5 @@
  * @returns The circumference of the circle.
  */
 export function circumference(radius: number): number {
-  return 2 * Math.PI * radius;
+	return 2 * Math.PI * radius;
 }

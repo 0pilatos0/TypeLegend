@@ -3,5 +3,5 @@
  * @returns {number} The current day of the month.
  */
 export function currentDay(): number {
-  return new Date().getDate();
+	return new Date().getDate();
 }

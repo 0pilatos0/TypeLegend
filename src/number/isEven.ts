@@ -4,5 +4,5 @@
  * @returns True if the number is even, false otherwise.
  */
 export function isEven(n: number): boolean {
-  return n % 2 === 0;
+	return n % 2 === 0;
 }

@@ -4,13 +4,15 @@
  * @returns A boolean indicating whether the email is valid or not.
  */
 export function isEmail(email: string): boolean {
-  email = email.trim();
+	let mail = email;
 
-  if (email.length > 254) {
-    return false;
-  }
+	mail = mail.trim();
 
-  const emailRegex =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-  return emailRegex.test(email);
+	if (mail.length > 254) {
+		return false;
+	}
+
+	const emailRegex =
+		/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+	return emailRegex.test(mail);
 }

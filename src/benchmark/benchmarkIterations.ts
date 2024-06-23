@@ -7,15 +7,15 @@
  * @returns The total execution time in milliseconds.
  */
 export function benchmarkIterations(
-  fn: Function,
-  iterations: number,
-  ...args: any[]
+	fn: Function,
+	iterations: number,
+	...args: any[]
 ): number {
-  const start = performance.now();
-  for (let i = 0; i < iterations; i++) {
-    fn(...args);
-  }
-  const end = performance.now();
+	const start = performance.now();
+	for (let i = 0; i < iterations; i++) {
+		fn(...args);
+	}
+	const end = performance.now();
 
-  return end - start;
+	return end - start;
 }

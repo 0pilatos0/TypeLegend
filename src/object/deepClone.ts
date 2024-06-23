@@ -5,5 +5,5 @@
  * @returns A deep clone of the object.
  */
 export function deepClone<T>(obj: T): T {
-  return JSON.parse(JSON.stringify(obj));
+	return JSON.parse(JSON.stringify(obj));
 }

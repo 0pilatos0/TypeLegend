@@ -1,30 +1,30 @@
 
 import { deepClone } from "./deepClone";
-import { hasKey } from "./hasKey";
+import { pick } from "./pick";
 import { keys } from "./keys";
+import { hasKey } from "./hasKey";
 import { mapKeys } from "./mapKeys";
+import { values } from "./values";
 import { merge } from "./merge";
 import { omit } from "./omit";
-import { pick } from "./pick";
-import { values } from "./values";
 
 export class ObjectUtils {
   static deepClone: typeof deepClone = deepClone;
-  static hasKey: typeof hasKey = hasKey;
+  static pick: typeof pick = pick;
   static keys: typeof keys = keys;
+  static hasKey: typeof hasKey = hasKey;
   static mapKeys: typeof mapKeys = mapKeys;
+  static values: typeof values = values;
   static merge: typeof merge = merge;
   static omit: typeof omit = omit;
-  static pick: typeof pick = pick;
-  static values: typeof values = values;
 }
 
 export { deepClone } from "./deepClone";
-export { hasKey } from "./hasKey";
+export { pick } from "./pick";
 export { keys } from "./keys";
+export { hasKey } from "./hasKey";
 export { mapKeys } from "./mapKeys";
+export { values } from "./values";
 export { merge } from "./merge";
 export { omit } from "./omit";
-export { pick } from "./pick";
-export { values } from "./values";
 

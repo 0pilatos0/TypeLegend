@@ -4,5 +4,5 @@
  * @returns {boolean} - Returns true if the date falls on a weekend, otherwise returns false.
  */
 export function isWeekend(date: Date): boolean {
-  return date.getDay() === 0 || date.getDay() === 6;
+	return date.getDay() === 0 || date.getDay() === 6;
 }

@@ -6,5 +6,7 @@
  * @returns The difference in weeks between the two dates.
  */
 export function differenceInWeeks(dateLeft: Date, dateRight: Date): number {
-  return Math.round((dateRight.getTime() - dateLeft.getTime()) / (1000 * 3600 * 24 * 7));
+	return Math.round(
+		(dateRight.getTime() - dateLeft.getTime()) / (1000 * 3600 * 24 * 7),
+	);
 }

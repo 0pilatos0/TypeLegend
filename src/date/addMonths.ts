@@ -6,7 +6,7 @@
  * @returns {Date} - The new date after adding the specified number of months.
  */
 export function addMonths(date: Date, months: number): Date {
-  const newDate = new Date(date);
-  newDate.setMonth(date.getMonth() + months);
-  return newDate;
+	const newDate = new Date(date);
+	newDate.setMonth(date.getMonth() + months);
+	return newDate;
 }
