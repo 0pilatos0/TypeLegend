@@ -15,6 +15,7 @@ Here are some of the utility functions and classes available in this library:
   - [diff](#diff)
   - [sample](#sample)
   - [intersect](#intersect)
+  - [differenceBy](#differenceby)
   - [zip](#zip)
   - [shuffle](#shuffle)
   - [chunk](#chunk)
@@ -207,6 +208,22 @@ the following utility functions are available in the `ArrayUtils` class, they ca
  * @param a - The first input array.
  * @param b - The second input array.
  * @returns An array containing the elements that are present in both input arrays.
+*/
+```
+
+
+### differenceBy
+```typescript
+/**
+ * Returns an array of values from `arr` that are not present in `values`,
+ * based on the result of applying `iteratee` function to each value.
+ *
+ * @template T The type of elements in the input array.
+ * @template U The type of elements returned by the `iteratee` function.
+ * @param  arr The input array to compare against.
+ * @param  values The array of values to exclude from the result.
+ * @param  iteratee The function to transform each value before comparison.
+ * @returns  An array of values from `arr` that are not present in `values`.
 */
 ```
 
